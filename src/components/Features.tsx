@@ -17,19 +17,19 @@ const Features = () => {
       icon: <Target className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Estudos & Vestibular",
       description: "Transforme a forma como você estuda, elimina distrações e foca por horas com leveza.",
-      image: "/lovable-uploads/48e540e5-6a25-44e4-b3f7-80f3bfc2777a.png"
+      image: "https://i.imgur.com/XbCJDPc.jpeg"
     },
     {
       icon: <Brain className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Negócios & Projetos",
       description: "Execute ideias que estavam travadas, supere a autossabotagem e crie consistência.",
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png"
+      image: "https://i.imgur.com/6NXUYEl.jpeg"
     },
     {
       icon: <Rocket className="w-10 h-10 text-white transition-transform duration-300 transform" />,
       title: "Vida Pessoal",
       description: "Volte a ter domínio do seu tempo e pare de adiar aquilo que importa.",
-      image: "/lovable-uploads/cf8966e3-de0d-445f-9fbd-ee6c48daa7ff.png"
+      image: "https://i.imgur.com/kDlJ9wi.jpeg"
     }
   ];
 
@@ -66,20 +66,6 @@ const Features = () => {
     }
     return () => observer.disconnect();
   }, []);
-
-  const realApplications = [{
-    image: "/lovable-uploads/843446fe-638e-4efb-b885-ed3cd505325a.png",
-    title: "Foco nos Estudos",
-    description: "Métodos práticos para manter concentração e eliminar distrações durante o aprendizado."
-  }, {
-    image: "/lovable-uploads/5463c9c5-0946-4280-a14b-17636ff69a98.png",
-    title: "Produtividade no Trabalho",
-    description: "Estratégias para aumentar sua eficiência e entregar resultados consistentes."
-  }, {
-    image: "/lovable-uploads/c5f8ee24-9815-4ebe-b65d-6f3d449feb8b.png",
-    title: "Transformação Pessoal",
-    description: "Como desenvolver disciplina e criar hábitos que geram mudanças reais na sua vida."
-  }];
 
   const mainFeatures = [
     {
@@ -242,90 +228,96 @@ const Features = () => {
             ))}
           </div>
 
-          <div className="mt-16 mb-8 feature-item">
-            <div className="text-center mb-8">
-              <div className="inline-block mb-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
-                Aplicações Práticas
-              </div>
-              <h3 className="text-2xl font-bold">Como Funciona na Prática</h3>
-              <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-                Veja como o método é aplicado em diferentes áreas da vida para gerar resultados reais.
-                <span className="block text-sm mt-1 text-orange-500">Deslize para ver mais exemplos →</span>
-              </p>
-            </div>
-            
-            <div className="rounded-xl overflow-hidden bg-white p-4 feature-item">
-              <Carousel className="w-full max-w-7xl mx-auto">
-                <CarouselContent className="flex">
-                  {realApplications.map((study, index) => <CarouselItem key={index} className="md:basis-1/3 flex-shrink-0">
-                      <Card className="border border-gray-100 shadow-md">
-                        <CardContent className="p-0">
-                          <div className="w-full h-full">
-                            <img src={study.image} alt={study.title} className="w-full h-auto object-contain" />
-                          </div>
-                          <div className="p-4">
-                            <h4 className="font-semibold text-lg">{study.title}</h4>
-                            <p className="text-sm text-gray-600 mt-2">{study.description}</p>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </CarouselItem>)}
-                </CarouselContent>
-                <div className="flex justify-center mt-6 gap-2">
-                  <CarouselPrevious className="relative static left-auto translate-y-0 hover:bg-gray-100" />
-                  <CarouselNext className="relative static right-auto translate-y-0 hover:bg-gray-100" />
-                </div>
-              </Carousel>
-            </div>
+          <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
+              Iniciar Transformação Agora
+              <Zap className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+            </Button>
           </div>
-        </div>
-        
-        <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
-            Iniciar Transformação Agora
-            <Zap className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
-          </Button>
         </div>
       </section>
       
-      <section id="method" className="bg-gray-50 py-10 md:py-16">
+      <section id="method" className="relative bg-black overflow-hidden py-16 md:py-24 w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-block mb-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
+          <div className="text-center mb-16 max-w-3xl mx-auto feature-item">
+            <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-sm font-medium">
               Nosso Método
             </div>
-            <h2 className="text-3xl font-bold mb-4">Do Caos à Ação</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Do Caos à Ação
+            </h2>
+            <p className="text-xl text-gray-300 leading-relaxed">
               Baseado em ciência e experiências reais, o método do "Quebrando Correntes" guia você em uma jornada 
               de 30 dias com práticas simples, profundas e transformadoras.
             </p>
           </div>
           
-          <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-8 mb-10 transition-all duration-300 hover:shadow-xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {methodSteps.map((step, index) => (
-                <div key={index} className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="bg-orange-50 rounded-full p-4 mb-4">
-                      {step.icon}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {methodSteps.map((step, index) => (
+              <div 
+                key={index} 
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                style={{
+                  transitionDelay: `${index * 150}ms`
+                }}
+              >
+                {/* Traço laranja no topo */}
+                <div className="absolute top-0 right-0 w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
+                
+                {/* Glow effect no hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative z-10">
+                  {/* Ícone centralizado */}
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-xl group-hover:bg-orange-500/30 transition-all duration-500"></div>
+                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
+                        <div className="text-orange-500 group-hover:text-orange-400 transition-colors duration-300">
+                          {step.icon}
+                        </div>
+                      </div>
                     </div>
-                    <h3 className="text-lg font-bold mb-2">{step.title}</h3>
-                    <p className="text-sm text-gray-600">{step.description}</p>
+                  </div>
+                  
+                  {/* Conteúdo */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                      {step.description}
+                    </p>
+                  </div>
+                  
+                  {/* Indicador de progresso */}
+                  <div className="absolute bottom-6 left-8 right-8">
+                    <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 md:p-12 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 overflow-hidden relative group">
+            {/* Traço laranja no topo */}
+            <div className="absolute top-0 right-0 w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
             
-            <div className="bg-gradient-to-r from-orange-50 via-white to-orange-50 rounded-lg p-8 max-w-xl mx-auto text-center shadow-md hover:shadow-lg transition-all duration-300">
+            {/* Glow effect no hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="relative z-10 max-w-xl mx-auto text-center">
               <div className="relative inline-block mb-4">
                 <div className="absolute inset-0 bg-orange-500/10 rounded-full animate-pulse-slow"></div>
-                <div className="relative bg-white rounded-full p-4 border border-orange-200 shadow-md">
-                  <Rocket className="h-10 w-10 text-orange-600" />
+                <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 border border-orange-200/20 shadow-md">
+                  <Rocket className="h-10 w-10 text-orange-500" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Transformação Completa</h3>
-              <p className="text-gray-700">30 dias para quebrar as correntes da procrastinação</p>
-              <div className="flex justify-center mt-4 space-x-2">
+              <h3 className="text-3xl font-bold mb-4 text-white">Transformação Completa</h3>
+              <p className="text-xl text-gray-300 leading-relaxed">30 dias para quebrar as correntes da procrastinação</p>
+              <div className="flex justify-center mt-6 space-x-2">
                 <span className="inline-block w-3 h-3 rounded-full bg-orange-300 animate-pulse"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-orange-500 animate-pulse animation-delay-200"></span>
                 <span className="inline-block w-3 h-3 rounded-full bg-orange-700 animate-pulse animation-delay-400"></span>
@@ -333,7 +325,7 @@ const Features = () => {
             </div>
           </div>
           
-          <div className="text-center">
+          <div className="text-center mt-12">
             <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
               Começar Minha Transformação
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
