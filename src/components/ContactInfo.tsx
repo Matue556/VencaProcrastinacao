@@ -1,87 +1,172 @@
 
-import React from 'react';
-import { Mail, Linkedin, Phone } from 'lucide-react';
+import React, { useState } from 'react';
+import { Download, CheckCircle, Zap } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
 
-const ContactInfo = () => {
+const EbookDownload = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleDownload = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email || !name) {
+      toast({
+        title: "Atenção",
+        description: "Por favor, preencha seu nome e email para baixar o eBook.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      // EmailJS configuration
+      const EMAILJS_SERVICE_ID = "service_i3h66xg";
+      const EMAILJS_TEMPLATE_ID = "template_fgq53nh";
+      const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
+      
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: `Nova solicitação de download do eBook "Quebrando Correntes" de ${name}.`,
+        to_name: 'Quebrando Correntes',
+        reply_to: email
+      };
+      
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+      
+      toast({
+        title: "Sucesso!",
+        description: "Em breve você receberá o eBook em seu email. Verifique também a caixa de spam.",
+        variant: "default"
+      });
+      
+      setEmail("");
+      setName("");
+      
+      // Simular download (em um cenário real, você redirecionaria para o arquivo)
+      setTimeout(() => {
+        toast({
+          title: "Download Iniciado!",
+          description: "Seu eBook 'Quebrando Correntes' está sendo baixado.",
+          variant: "default"
+        });
+      }, 2000);
+      
+    } catch (error) {
+      console.error("Erro ao solicitar download:", error);
+      
+      toast({
+        title: "Erro",
+        description: "Houve um problema ao processar sua solicitação. Tente novamente.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <section id="contact-info" className="bg-gradient-to-b from-white to-black text-white relative py-[15px] md:py-[25px]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="download" className="bg-gradient-to-b from-orange-50 to-white py-[25px] md:py-[40px]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-white text-black rounded-full text-sm font-medium">
-            Get In Touch
+          <div className="inline-block mb-3 px-3 py-1 bg-orange-600 text-white rounded-full text-sm font-medium">
+            Baixe Agora
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-            Contact Us Today
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Comece Sua Transformação Hoje
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Have questions about our AI-powered sensor solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
+            Baixe gratuitamente o eBook "Quebrando Correntes" e descubra como vencer a procrastinação de uma vez por todas.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Felix's Contact Info */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
-            <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
-                alt="Felix von Heland"
-                className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
-              />
-              <h3 className="text-xl font-bold text-gray-900">Felix von Heland</h3>
-              <p className="text-gray-600 mb-4">CEO and Founder</p>
-              <div className="flex flex-col space-y-3">
-                <a href="mailto:felix@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
-                  <Mail className="w-5 h-5 mr-2" />
-                  felix@wrlds.com
-                </a>
-                <a 
-                  href="https://www.linkedin.com/in/felixvonheland/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 hover:text-blue-600"
-                >
-                  <Linkedin className="w-5 h-5 mr-2" />
-                  LinkedIn Profile
-                </a>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white rounded-xl shadow-xl p-8 border border-gray-100">
+            <form onSubmit={handleDownload} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  Seu Nome
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  placeholder="Digite seu nome"
+                  disabled={isSubmitting}
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  Seu Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  placeholder="Digite seu melhor email"
+                  disabled={isSubmitting}
+                />
+              </div>
+              
+              <Button
+                type="submit"
+                className="w-full py-4 text-lg bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  "Processando..."
+                ) : (
+                  <>
+                    <Download className="mr-2 w-5 h-5" />
+                    Baixar eBook Gratuitamente
+                  </>
+                )}
+              </Button>
+            </form>
+            
+            <div className="mt-6 pt-6 border-t border-gray-100">
+              <div className="flex items-center justify-center space-x-6 text-sm text-gray-600">
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                  <span>100% Gratuito</span>
+                </div>
+                <div className="flex items-center">
+                  <Zap className="w-4 h-4 text-orange-500 mr-1" />
+                  <span>Download Imediato</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                  <span>Sem Spam</span>
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Love's Contact Info */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
-            <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
-                alt="Love Anderberg"
-                className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
-              />
-              <h3 className="text-xl font-bold text-gray-900">Love Anderberg</h3>
-              <p className="text-gray-600 mb-4">COO</p>
-              <div className="flex flex-col space-y-3">
-                <a href="mailto:love@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
-                  <Mail className="w-5 h-5 mr-2" />
-                  love@wrlds.com
-                </a>
-                <a 
-                  href="https://www.linkedin.com/in/love-anderberg-67549a174/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 hover:text-blue-600"
-                >
-                  <Linkedin className="w-5 h-5 mr-2" />
-                  LinkedIn Profile
-                </a>
-                <a href="tel:+46760149508" className="flex items-center text-gray-700 hover:text-blue-600">
-                  <Phone className="w-5 h-5 mr-2" />
-                  076-014 95 08
-                </a>
-              </div>
-            </div>
-          </div>
+          
+          <p className="text-center text-sm text-gray-500 mt-4">
+            Ao baixar o eBook, você concorda em receber emails com dicas exclusivas sobre produtividade. 
+            Você pode cancelar a qualquer momento.
+          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default ContactInfo;
+export default EbookDownload;

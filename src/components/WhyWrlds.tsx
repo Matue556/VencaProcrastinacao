@@ -1,213 +1,150 @@
-import { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import { Layers, BarChart, AlertTriangle, Clock4, Rocket, Zap, Sparkles, ArrowRight, Award, Target, Shield, ChartBar } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { Link } from "react-router-dom";
 
-const AnimatedCounter = ({
-  end,
-  duration = 2000,
-  prefix = "",
-  suffix = "",
-  decimals = 0
-}: {
-  end: number;
-  duration?: number;
-  prefix?: string;
-  suffix?: string;
-  decimals?: number;
-}) => {
-  const [count, setCount] = useState(0);
-  const countRef = useRef(null);
-  const inView = useInView(countRef, {
-    once: true,
-    margin: "-100px"
-  });
-  useEffect(() => {
-    if (!inView) return;
-    let startTime: number;
-    let animationFrame: number;
-    const startAnimation = (timestamp: number) => {
-      startTime = timestamp;
-      animate(timestamp);
-    };
-    const animate = (timestamp: number) => {
-      const progress = Math.min((timestamp - startTime) / duration, 1);
-      const currentCount = progress * end;
-      setCount(currentCount);
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
-    };
-    animationFrame = requestAnimationFrame(startAnimation);
-    return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-    };
-  }, [end, duration, inView]);
-  return <span ref={countRef} className="font-bold tabular-nums">
-      {prefix}{count.toFixed(decimals)}{suffix}
-    </span>;
-};
+import { CheckCircle, Zap, Target, Heart } from "lucide-react";
+import { motion } from "framer-motion";
 
-const WhyWrlds = () => {
-  const isMobile = useIsMobile();
+const WhyQuebrando = () => {
   const containerVariants = {
-    hidden: {
-      opacity: 0
-    },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.3,
-        duration: 0.8
+        staggerChildren: 0.2,
+        delayChildren: 0.3
       }
     }
   };
+
   const itemVariants = {
-    hidden: {
-      y: 20,
-      opacity: 0
-    },
-    visible: {
-      y: 0,
+    hidden: { y: 30, opacity: 0 },
+    visible: { 
+      y: 0, 
       opacity: 1,
-      transition: {
-        duration: 0.6
-      }
+      transition: { duration: 0.6 }
     }
   };
-  return <section id="why-wrlds" className="relative py-16 md:py-24 bg-white overflow-hidden">
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div className="text-center mb-12 md:mb-16" initial="hidden" whileInView="visible" viewport={{
-        once: true,
-        margin: "-100px"
-      }} variants={containerVariants}>
-          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-            Why WRLDS?
-          </motion.h2>
-          <motion.p variants={itemVariants} className="text-gray-600 text-lg max-w-3xl mx-auto">
-            In an industry where complexity leads to failure, we bring simplicity and expertise to ensure your success
-          </motion.p>
+
+  const benefits = [
+    {
+      icon: <Zap className="w-8 h-8 text-orange-600" />,
+      title: "Liberta você dos ciclos de adiamento",
+      description: "Quebre de vez os padrões que te mantêm preso na procrastinação"
+    },
+    {
+      icon: <Target className="w-8 h-8 text-orange-600" />,
+      title: "Te ajuda a criar foco e rotina",
+      description: "Desenvolva a capacidade de manter concentração e consistência"
+    },
+    {
+      icon: <Heart className="w-8 h-8 text-orange-600" />,
+      title: "Redireciona sua mentalidade para o que importa",
+      description: "Transforme sua forma de pensar e priorize o que realmente faz diferença"
+    },
+    {
+      icon: <CheckCircle className="w-8 h-8 text-orange-600" />,
+      title: "Gera ação mesmo nos dias ruins",
+      description: "Aprenda a manter momentum mesmo quando a motivação não está presente"
+    }
+  ];
+
+  const differentials = [
+    "Sem enrolação — direto ao ponto",
+    "Estratégias que funcionam no mundo real", 
+    "Pensado para quem já tentou 'de tudo' e ainda não conseguiu"
+  ];
+
+  return (
+    <section className="bg-black text-white py-16 md:py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black"></div>
+      
+      <motion.div 
+        className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <motion.div className="text-center mb-16" variants={itemVariants}>
+          <div className="inline-block mb-4 px-4 py-2 bg-orange-600 text-white rounded-full text-sm font-medium">
+            Por que este eBook é Diferente?
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            O Que Este Guia Faz por Você
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Não é mais um livro motivacional. É um sistema prático, testado e validado 
+            para quem está cansado de promessas vazias.
+          </p>
         </motion.div>
-        
-        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" initial="hidden" whileInView="visible" viewport={{
-        once: true,
-        margin: "-100px"
-      }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <BarChart className="w-8 h-8 text-gray-700" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={3.8} decimals={1} suffix=" Billion" /> USD
-            </h3>
-            <p className="text-gray-700">Market estimated to reach this value by 2030, with massive growth potential for smart textile solutions</p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <AlertTriangle className="w-8 h-8 text-gray-700" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={60} suffix="%" /> 
-            </h3>
-            <p className="text-gray-700">
-              of IoT projects stall at the proof-of-concept stage due to fragmented expertise and poor coordination
-            </p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="bg-gray-100 p-6 rounded-xl border border-gray-200 text-center hover:bg-gray-200 transition-all">
-            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-              <Clock4 className="w-8 h-8 text-gray-700" />
-            </div>
-            <h3 className="text-gray-900 text-2xl lg:text-3xl font-bold mb-3">
-              <AnimatedCounter end={80} suffix="%" />
-            </h3>
-            <p className="text-gray-700">
-              Increase in time-to-market for IoT products over the past four years, creating costly delays
-            </p>
-          </motion.div>
-        </motion.div>
-        
-        <motion.div className="mb-12" initial="hidden" whileInView="visible" viewport={{
-          once: true,
-          margin: "-100px"
-        }} variants={containerVariants}>
-          <motion.div variants={itemVariants} className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-              What WRLDS Does for You
-            </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We transform your ideas into market-ready solutions with tangible benefits for your business
-            </p>
-          </motion.div>
-          
-          <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-              <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <BarChart className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">New Revenue Products</h4>
-                  <p className="text-gray-700">Create high-margin, sensor-enabled products for new revenue streams.</p>
-                </div>
-              </div>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-              <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Sparkles className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Innovation That Attracts</h4>
-                  <p className="text-gray-700">Break through to dream clients with tech that makes you stand out.</p>
-                </div>
-              </div>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-              <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Zap className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Comfort-Zone Development</h4>
-                  <p className="text-gray-700">We develop frontier tech while you stay in your comfort zone.</p>
-                </div>
-              </div>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all">
-              <div className="flex items-start">
-                <div className="bg-gray-200 rounded-full p-3 mr-4">
-                  <Rocket className="w-6 h-6 text-gray-700" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Brand-Building Leaps</h4>
-                  <p className="text-gray-700">We enable hardware/software leaps that define your brand's future.</p>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="text-center mt-10">
-            <Link 
-              to="/development-process" 
-              onClick={() => window.scrollTo(0, 0)}
-              className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all group"
+
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+          variants={containerVariants}
+        >
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={index}
+              className="flex items-start space-x-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
+              variants={itemVariants}
+              whileHover={{ scale: 1.02 }}
             >
-              Learn more about our structured development process
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
+              <div className="flex-shrink-0 bg-orange-600/20 p-3 rounded-lg">
+                {benefit.icon}
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{benefit.description}</p>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
-      </div>
-    </section>;
+
+        <motion.div 
+          className="bg-gradient-to-r from-orange-600/20 to-orange-800/20 rounded-2xl p-8 md:p-12 backdrop-blur-sm border border-orange-500/30"
+          variants={itemVariants}
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Diferenciais que Fazem a Diferença
+            </h3>
+            <p className="text-gray-300 text-lg">
+              Criado para quem já tentou outros métodos e quer algo que realmente funcione
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {differentials.map((differential, index) => (
+              <motion.div
+                key={index}
+                className="text-center p-6 rounded-xl bg-white/5 border border-white/10"
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+              >
+                <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-white font-medium">{differential}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div 
+          className="text-center mt-16"
+          variants={itemVariants}
+        >
+          <div className="inline-flex items-center space-x-2 text-orange-400 mb-4">
+            <Zap className="w-5 h-5" />
+            <span className="font-medium">Transformação Garantida</span>
+            <Zap className="w-5 h-5" />
+          </div>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Mais de <span className="text-orange-400 font-bold">10.000 pessoas</span> já 
+            transformaram suas vidas com este método. Agora é a sua vez.
+          </p>
+        </motion.div>
+      </motion.div>
+    </section>
+  );
 };
 
-export default WhyWrlds;
+export default WhyQuebrando;

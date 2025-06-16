@@ -1,6 +1,5 @@
 
-import { ArrowRight, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Download } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
@@ -15,8 +14,8 @@ const Footer = () => {
     
     if (!email) {
       toast({
-        title: "Error",
-        description: "Please enter your email address.",
+        title: "Erro",
+        description: "Por favor, digite seu email.",
         variant: "destructive"
       });
       return;
@@ -31,10 +30,10 @@ const Footer = () => {
       const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
       
       const templateParams = {
-        from_name: "Website Subscriber",
+        from_name: "Assinante Newsletter",
         from_email: email,
-        message: `New subscription request from the website footer.`,
-        to_name: 'WRLDS Team',
+        message: `Nova inscrição na newsletter do Quebrando Correntes.`,
+        to_name: 'Quebrando Correntes',
         reply_to: email
       };
       
@@ -46,18 +45,18 @@ const Footer = () => {
       );
       
       toast({
-        title: "Success!",
-        description: "Thank you for subscribing to our newsletter.",
+        title: "Sucesso!",
+        description: "Obrigado por se inscrever! Você receberá dicas exclusivas em breve.",
         variant: "default"
       });
       
       setEmail("");
     } catch (error) {
-      console.error("Error sending subscription:", error);
+      console.error("Erro ao inscrever na newsletter:", error);
       
       toast({
-        title: "Error",
-        description: "There was a problem subscribing. Please try again later.",
+        title: "Erro",
+        description: "Houve um problema ao processar sua inscrição. Tente novamente.",
         variant: "destructive"
       });
     } finally {
@@ -66,51 +65,41 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-black text-white pt-16 pb-8 w-full">
+    <footer className="bg-black text-white pt-16 pb-8 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
-            <img 
-              src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-              alt="WRLDS Technologies Logo" 
-              className="h-10 w-auto mb-6 invert" // Added invert to make logo white
-            />
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-orange-400 mb-2">Quebrando Correntes</h3>
+              <p className="text-gray-400 text-sm">Transforme sua Vida com Ação</p>
+            </div>
             <p className="text-gray-300 mb-6">
-              WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart sensor devices, giving customers 100% ownership while handling the complete technological development.
+              "Quebrando Correntes" é um guia prático e direto para quem está cansado de procrastinar 
+              e quer transformar a vida com ação. Métodos baseados em ciência e experiências reais 
+              para criar uma rotina de disciplina e foco.
             </p>
-            <p className="text-gray-300 mb-6">
-              Hornsgatan 110<br />
-              117 26, Stockholm Sweden
-            </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://www.linkedin.com/company/wrldstechnologies/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-gray-700 hover:text-white"
-              >
-                <Linkedin size={20} />
-              </a>
+            <div className="bg-orange-600/20 rounded-lg p-4 border border-orange-500/30">
+              <h4 className="font-semibold text-orange-400 mb-2">✨ O que você vai encontrar:</h4>
+              <ul className="text-gray-300 text-sm space-y-1">
+                <li>• Método testado para vencer a procrastinação</li>
+                <li>• Plano de 30 dias com ações práticas</li>
+                <li>• Técnicas baseadas em neurociência</li>
+                <li>• Estratégias para criar foco e disciplina</li>
+              </ul>
             </div>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
-            <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Get in Touch</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Receba Dicas Exclusivas</h3>
+            <p className="text-gray-300 mb-4 text-sm">
+              Cadastre-se e receba conteúdos exclusivos sobre produtividade, mindset e transformação pessoal.
+            </p>
             <form className="space-y-4" onSubmit={handleSubscribe}>
               <div>
                 <input 
                   type="email" 
-                  placeholder="Your email" 
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 text-white placeholder-gray-400"
+                  placeholder="Seu melhor email" 
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 text-white placeholder-gray-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isSubmitting}
@@ -118,26 +107,31 @@ const Footer = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed font-medium"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Subscribing..." : (
+                {isSubmitting ? "Inscrevendo..." : (
                   <>
-                    Subscribe
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    Quero Receber Dicas
+                    <Download className="ml-2 w-4 h-4" />
                   </>
                 )}
               </button>
             </form>
+            <p className="text-gray-500 text-xs mt-2">
+              Sem spam. Você pode cancelar a qualquer momento.
+            </p>
           </div>
         </div>
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} Quebrando Correntes. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6">
-            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+          <div className="text-center">
+            <p className="text-gray-500 text-xs">
+              Um método criado para transformar vidas através da ação
+            </p>
           </div>
         </div>
       </div>
