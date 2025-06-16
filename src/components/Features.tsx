@@ -81,6 +81,24 @@ const Features = () => {
     description: "Como desenvolver disciplina e criar hábitos que geram mudanças reais na sua vida."
   }];
 
+  const mainFeatures = [
+    {
+      icon: <Target className="w-12 h-12" />,
+      title: "Rotina com Clareza",
+      description: "Crie uma rotina produtiva com métodos práticos e uma estrutura simples que funciona todos os dias."
+    },
+    {
+      icon: <Brain className="w-12 h-12" />,
+      title: "Método Testado e Validado",
+      description: "Um sistema que combina neurociência, psicologia comportamental e hábitos comprovados para eliminar a procrastinação."
+    },
+    {
+      icon: <Rocket className="w-12 h-12" />,
+      title: "Funciona para Todos os Perfis",
+      description: "Estudantes, profissionais, criadores ou empreendedores — esse guia é feito para qualquer pessoa que busca consistência."
+    }
+  ];
+
   const methodSteps = [{
     icon: <CheckCircle className="h-10 w-10 text-orange-600" />,
     title: "Capítulos Curtos",
@@ -96,6 +114,72 @@ const Features = () => {
   }];
 
   return <>
+      {/* Seção Principal com Cards Transformados */}
+      <section className="relative bg-black overflow-hidden py-16 md:py-24 w-full">
+        <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
+          <div className="text-center mb-16 max-w-3xl mx-auto feature-item">
+            <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-sm font-medium">
+              🔥 Três Pilares da Transformação
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              O Que Você Vai Dominar
+            </h2>
+            <p className="text-xl text-gray-300 leading-relaxed">
+              Descubra os três fundamentos que vão revolucionar sua relação com a produtividade e ação.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {mainFeatures.map((feature, index) => (
+              <div 
+                key={index} 
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                style={{
+                  transitionDelay: `${index * 150}ms`
+                }}
+              >
+                {/* Traço laranja no topo */}
+                <div className="absolute top-0 right-0 w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
+                
+                {/* Glow effect no hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative z-10">
+                  {/* Ícone centralizado */}
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-xl group-hover:bg-orange-500/30 transition-all duration-500"></div>
+                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
+                        <div className="text-orange-500 group-hover:text-orange-400 transition-colors duration-300">
+                          {feature.icon}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Conteúdo */}
+                  <div className="text-left">
+                    <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                      {feature.description}
+                    </p>
+                  </div>
+                  
+                  {/* Indicador de progresso */}
+                  <div className="absolute bottom-6 left-8 right-8">
+                    <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="applications" className="relative bg-white overflow-hidden py-10 md:py-[50px] w-full">
         <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
           <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
