@@ -65,7 +65,7 @@ const WhyQuebrando = () => {
       >
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <div className="inline-block mb-4 px-4 py-2 bg-orange-600 text-white rounded-full text-sm font-medium">
-            Por que este eBook é Diferente?
+            Por que este Guia é Diferente?
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             O Que Este Guia Faz por Você
@@ -138,7 +138,7 @@ const WhyQuebrando = () => {
             <Zap className="w-5 h-5" />
           </div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Mais de <span className="text-orange-400 font-bold">10.000 pessoas</span> já 
+            Mais de <span className="text-orange-400 font-bold">2.000 pessoas</span> já 
             transformaram suas vidas com este método. Agora é a sua vez.
           </p>
         </motion.div>

@@ -1,167 +1,121 @@
 
-import React, { useState } from 'react';
-import { Download, CheckCircle, Zap } from 'lucide-react';
+import React from 'react';
+import { Zap, CheckCircle, Star, Crown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useToast } from "@/hooks/use-toast";
-import emailjs from 'emailjs-com';
 
-const EbookDownload = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleDownload = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email || !name) {
-      toast({
-        title: "Atenção",
-        description: "Por favor, preencha seu nome e email para baixar o eBook.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    setIsSubmitting(true);
-    
-    try {
-      // EmailJS configuration
-      const EMAILJS_SERVICE_ID = "service_i3h66xg";
-      const EMAILJS_TEMPLATE_ID = "template_fgq53nh";
-      const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
-      
-      const templateParams = {
-        from_name: name,
-        from_email: email,
-        message: `Nova solicitação de download do eBook "Quebrando Correntes" de ${name}.`,
-        to_name: 'Quebrando Correntes',
-        reply_to: email
-      };
-      
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams,
-        EMAILJS_PUBLIC_KEY
-      );
-      
-      toast({
-        title: "Sucesso!",
-        description: "Em breve você receberá o eBook em seu email. Verifique também a caixa de spam.",
-        variant: "default"
-      });
-      
-      setEmail("");
-      setName("");
-      
-      // Simular download (em um cenário real, você redirecionaria para o arquivo)
-      setTimeout(() => {
-        toast({
-          title: "Download Iniciado!",
-          description: "Seu eBook 'Quebrando Correntes' está sendo baixado.",
-          variant: "default"
-        });
-      }, 2000);
-      
-    } catch (error) {
-      console.error("Erro ao solicitar download:", error);
-      
-      toast({
-        title: "Erro",
-        description: "Houve um problema ao processar sua solicitação. Tente novamente.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+const OfferCard = () => {
+  const handlePurchase = () => {
+    // Aqui você pode integrar com sistema de pagamento
+    window.open('https://pay.hotmart.com/seu-link-de-pagamento', '_blank');
   };
 
   return (
-    <section id="download" className="bg-gradient-to-b from-orange-50 to-white py-[25px] md:py-[40px]">
+    <section id="offer" className="bg-gradient-to-b from-orange-50 to-white py-[25px] md:py-[40px]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-block mb-3 px-3 py-1 bg-orange-600 text-white rounded-full text-sm font-medium">
-            Baixe Agora
+            🎯 Oferta Especial
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Comece Sua Transformação Hoje
+            Comece Agora sua Transformação
           </h2>
-          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Baixe gratuitamente o eBook "Quebrando Correntes" e descubra como vencer a procrastinação de uma vez por todas.
+          <div className="flex items-center justify-center space-x-4 mb-4">
+            <span className="text-2xl text-gray-500 line-through">De R$97,00</span>
+            <span className="text-4xl md:text-5xl font-bold text-orange-600">R$17,99</span>
+          </div>
+          <p className="text-gray-700 text-lg">
+            Acesso completo ao método que já transformou milhares de vidas
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-xl shadow-xl p-8 border border-gray-100">
-            <form onSubmit={handleDownload} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Seu Nome
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  placeholder="Digite seu nome"
-                  disabled={isSubmitting}
-                />
+          <div className="bg-white rounded-xl shadow-2xl p-8 border-2 border-orange-200 relative overflow-hidden">
+            {/* Badge de destaque */}
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <div className="bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-bold flex items-center">
+                <Crown className="w-4 h-4 mr-1" />
+                MELHOR OFERTA
+              </div>
+            </div>
+
+            <div className="mt-6 space-y-6">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-2">O que você vai receber:</h3>
               </div>
               
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Seu Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  placeholder="Digite seu melhor email"
-                  disabled={isSubmitting}
-                />
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Acesso imediato ao Guia Quebrando Correntes</h4>
+                    <p className="text-gray-600 text-sm">Método completo em formato digital</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Técnicas comprovadas contra a procrastinação</h4>
+                    <p className="text-gray-600 text-sm">Baseadas em neurociência e psicologia comportamental</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Plano prático de 30 dias para transformar sua vida</h4>
+                    <p className="text-gray-600 text-sm">Passo a passo estruturado para resultados garantidos</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <Star className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">BÔNUS EXCLUSIVO: Checklist de produtividade</h4>
+                    <p className="text-gray-600 text-sm">Ferramenta prática para acelerar seus resultados</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-6 border border-orange-200">
+                <div className="text-center">
+                  <p className="text-sm text-gray-600 mb-2">⏰ Oferta por tempo limitado</p>
+                  <p className="text-orange-700 font-semibold">Garante já o seu desconto de 81% OFF</p>
+                </div>
               </div>
               
               <Button
-                type="submit"
-                className="w-full py-4 text-lg bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={isSubmitting}
+                onClick={handlePurchase}
+                className="w-full py-6 text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group"
               >
-                {isSubmitting ? (
-                  "Processando..."
-                ) : (
-                  <>
-                    <Download className="mr-2 w-5 h-5" />
-                    Baixar eBook Gratuitamente
-                  </>
-                )}
+                <span className="relative z-10 flex items-center justify-center">
+                  Quero Iniciar Minha Transformação Agora
+                  <Zap className="ml-3 w-6 h-6 group-hover:scale-125 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
-            </form>
-            
-            <div className="mt-6 pt-6 border-t border-gray-100">
-              <div className="flex items-center justify-center space-x-6 text-sm text-gray-600">
-                <div className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
-                  <span>100% Gratuito</span>
-                </div>
-                <div className="flex items-center">
-                  <Zap className="w-4 h-4 text-orange-500 mr-1" />
-                  <span>Download Imediato</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
-                  <span>Sem Spam</span>
+              
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-6 text-sm text-gray-600">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                    <span>Pagamento Seguro</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Zap className="w-4 h-4 text-orange-500 mr-1" />
+                    <span>Acesso Imediato</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-500 mr-1" />
+                    <span>Garantia 7 dias</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
           <p className="text-center text-sm text-gray-500 mt-4">
-            Ao baixar o eBook, você concorda em receber emails com dicas exclusivas sobre produtividade. 
-            Você pode cancelar a qualquer momento.
+            Processamento seguro. Seus dados estão protegidos com criptografia SSL.
           </p>
         </div>
       </div>
@@ -169,4 +123,4 @@ const EbookDownload = () => {
   );
 };
 
-export default EbookDownload;
+export default OfferCard;

@@ -1,6 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { CheckCircle, Target, Brain, Rocket, ArrowRight, Download } from "lucide-react";
+import { CheckCircle, Target, Brain, Rocket, ArrowRight, Zap } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
@@ -33,11 +33,11 @@ const Features = () => {
     }
   ];
 
-  const scrollToDownload = (e: React.MouseEvent) => {
+  const scrollToOffer = (e: React.MouseEvent) => {
     e.preventDefault();
-    const downloadSection = document.getElementById('download');
-    if (downloadSection) {
-      downloadSection.scrollIntoView({
+    const offerSection = document.getElementById('offer');
+    if (offerSection) {
+      offerSection.scrollIntoView({
         behavior: 'smooth'
       });
     }
@@ -197,9 +197,9 @@ const Features = () => {
         </div>
         
         <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <Button onClick={scrollToDownload} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
-            Baixar o eBook Agora
-            <Download className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
+          <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
+            Iniciar Transformação Agora
+            <Zap className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
           </Button>
         </div>
       </section>
@@ -250,7 +250,7 @@ const Features = () => {
           </div>
           
           <div className="text-center">
-            <Button onClick={scrollToDownload} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
+            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
               Começar Minha Transformação
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>

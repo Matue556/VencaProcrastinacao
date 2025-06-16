@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import EbookDownload from '@/components/ContactInfo';
+import OfferCard from '@/components/ContactInfo';
 
 type PageLayoutProps = {
   children: React.ReactNode;
@@ -22,7 +22,7 @@ const PageLayout = ({ children, showDownload = true }: PageLayoutProps) => {
     <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
       {children}
-      {showDownload && <EbookDownload />}
+      {showDownload && <OfferCard />}
       <Footer />
     </div>
   );
