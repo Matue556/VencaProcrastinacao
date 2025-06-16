@@ -53,28 +53,22 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>Destrave seu Potencial com o Guia Definitivo contra a Procrastinação</motion.h1>
-              <motion.p className="banner-subtitle text-gray-300 mt-4 sm:mt-6" variants={itemVariants}>
+              <motion.h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6" variants={itemVariants}>
+                Destrave seu Potencial com o<br className="hidden sm:block" /> Guia Definitivo contra a<br className="hidden sm:block" /> Procrastinação
+              </motion.h1>
+              <motion.p className="text-gray-300 mt-4 sm:mt-6 text-base sm:text-lg md:text-xl" variants={itemVariants}>
                 O método que está mudando a forma como milhares de pessoas tomam controle da própria vida.
               </motion.p>
-              <motion.p className="text-gray-400 mt-2 sm:mt-4 text-lg" variants={itemVariants}>
+              <motion.p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base md:text-lg" variants={itemVariants}>
                 Descubra como quebrar os ciclos de autossabotagem e criar uma rotina de ação, foco e disciplina, mesmo que você ache que já tentou de tudo.
               </motion.p>
-              <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
+              <motion.div className="flex justify-center mt-6 sm:mt-8" variants={itemVariants}>
                 <button 
-                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
+                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-sm sm:text-base font-medium max-w-xs sm:max-w-none"
                   onClick={scrollToOffer}
                 >
                   Iniciar Transformação
                   <Zap className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
-                </button>
-                
-                <button 
-                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
-                  onClick={scrollToOffer}
-                >
-                  Começar Agora
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </motion.div>
             </motion.div>

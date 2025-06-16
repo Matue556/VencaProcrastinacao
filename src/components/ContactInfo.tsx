@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Zap, CheckCircle, Star, Crown } from 'lucide-react';
+import { Zap, CheckCircle, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const OfferCard = () => {
@@ -30,15 +30,7 @@ const OfferCard = () => {
 
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-xl shadow-2xl p-8 border-2 border-orange-200 relative overflow-hidden">
-            {/* Badge de destaque */}
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <div className="bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-bold flex items-center">
-                <Crown className="w-4 h-4 mr-1" />
-                MELHOR OFERTA
-              </div>
-            </div>
-
-            <div className="mt-6 space-y-6">
+            <div className="space-y-6">
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-2">O que você vai receber:</h3>
               </div>
