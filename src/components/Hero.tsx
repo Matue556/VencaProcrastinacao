@@ -1,4 +1,3 @@
-
 import { ArrowRight, Download, MessageSquare, Zap } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
@@ -54,8 +53,8 @@ const Hero = () => {
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 sm:mb-6 text-shadow-lg" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
-                Destrave seu Potencial com o<br className="hidden xs:block" /> 
-                Guia Definitivo contra a<br className="hidden xs:block" /> 
+                Destrave seu Potencial com o <br className="hidden xs:block" /> 
+                Guia Definitivo Contra a <br className="hidden xs:block" /> 
                 Procrastinação
               </motion.h1>
               <motion.p className="text-white mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
