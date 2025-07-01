@@ -22,7 +22,7 @@ const OfferCard = () => {
             Comece Agora sua Transformação
           </h2>
           <div className="flex items-center justify-center space-x-4 mb-4">
-            <span className="text-2xl text-gray-400 line-through">De R$97,00</span>
+            <span className="text-2xl text-gray-400 line-through">De R$197,00</span>
             <span className="text-4xl md:text-5xl font-bold text-orange-600">R$17,99</span>
           </div>
           <p className="text-gray-300 text-lg">
