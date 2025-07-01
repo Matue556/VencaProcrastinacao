@@ -8,19 +8,19 @@ const Testimonials = () => {
       quote: "Esse eBook foi como um tapa na cara que eu precisava. Parei de adiar tudo e hoje tenho rotina, foco e resultados.",
       author: "Lucas M.",
       role: "Estudante de Engenharia",
-      avatar: "👨‍🎓"
+      avatar: "https://i.imgur.com/qjCSrYo.jpeg"
     },
     {
       quote: "Achei que seria mais um conteúdo motivacional... Mas me surpreendi. É técnico, prático e direto.",
       author: "Jéssica A.",
       role: "Empreendedora",
-      avatar: "👩‍💼"
+      avatar: "https://i.imgur.com/hy7xjul.jpeg"
     },
     {
       quote: "Finalmente consegui terminar projetos que estavam parados há meses. O método realmente funciona!",
       author: "Carlos R.",
       role: "Desenvolvedor",
-      avatar: "👨‍💻"
+      avatar: "https://i.imgur.com/N14xbPq.jpeg"
     }
   ];
 
@@ -93,8 +93,12 @@ const Testimonials = () => {
               </div>
               
               <div className="flex items-center">
-                <div className="text-3xl mr-4">
-                  {testimonial.avatar}
+                <div className="mr-4">
+                  <img 
+                    src={testimonial.avatar} 
+                    alt={testimonial.author}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
