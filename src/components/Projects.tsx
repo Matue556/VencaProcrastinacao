@@ -7,19 +7,19 @@ const Testimonials = () => {
       quote: "Esse eBook foi como um tapa na cara que eu precisava. Parei de adiar tudo e hoje tenho rotina, foco e resultados.",
       author: "Lucas M.",
       role: "Estudante de Engenharia",
-      avatar: "https://i.imgur.com/XYZ1.png"
+      avatar: "/lovable-uploads/bb6e9a17-8122-498b-810e-c94ef2a23410.png"
     },
     {
       quote: "Achei que seria mais um conteúdo motivacional... Mas me surpreendi. É técnico, prático e direto.",
       author: "Jéssica A.",
       role: "Empreendedora",
-      avatar: "https://i.imgur.com/XYZ2.png"
+      avatar: "/lovable-uploads/a5e5e703-0b43-447b-b83f-79bad001a7a6.png"
     },
     {
       quote: "Finalmente consegui terminar projetos que estavam parados há meses. O método realmente funciona!",
       author: "Carlos R.",
       role: "Desenvolvedor",
-      avatar: "https://i.imgur.com/XYZ3.png"
+      avatar: "/lovable-uploads/ef553f47-3fcd-4071-9cd2-600bc1aef963.png"
     }
   ];
 
