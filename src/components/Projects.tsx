@@ -1,4 +1,3 @@
-
 import { Quote, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -8,19 +7,19 @@ const Testimonials = () => {
       quote: "Esse eBook foi como um tapa na cara que eu precisava. Parei de adiar tudo e hoje tenho rotina, foco e resultados.",
       author: "Lucas M.",
       role: "Estudante de Engenharia",
-      avatar: "https://i.imgur.com/qjCSrYo.jpeg"
+      avatar: "https://i.imgur.com/XYZ1.png"
     },
     {
       quote: "Achei que seria mais um conteúdo motivacional... Mas me surpreendi. É técnico, prático e direto.",
       author: "Jéssica A.",
       role: "Empreendedora",
-      avatar: "https://i.imgur.com/hy7xjul.jpeg"
+      avatar: "https://i.imgur.com/XYZ2.png"
     },
     {
       quote: "Finalmente consegui terminar projetos que estavam parados há meses. O método realmente funciona!",
       author: "Carlos R.",
       role: "Desenvolvedor",
-      avatar: "https://i.imgur.com/N14xbPq.jpeg"
+      avatar: "https://i.imgur.com/XYZ3.png"
     }
   ];
 
