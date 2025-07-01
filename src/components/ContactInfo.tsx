@@ -57,16 +57,32 @@ const OfferCard = () => {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Plano prático de 30 dias para transformar sua vida</h4>
-                    <p className="text-gray-300 text-sm">Passo a passo estruturado para resultados garantidos</p>
+                    <h4 className="font-semibold text-white">Sistema diário de ação para quebrar a procrastinação</h4>
+                    <p className="text-gray-300 text-sm">Roteiro estruturado para manter o foco e a consistência todos os dias</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">BÔNUS EXCLUSIVO: Checklist de produtividade</h4>
-                    <p className="text-gray-300 text-sm">Ferramenta prática para acelerar seus resultados</p>
+                    <h4 className="font-semibold text-white">📱 100 Wallpapers Motivacionais</h4>
+                    <p className="text-gray-300 text-sm">Mantenha seu foco reforçado com imagens que inspiram ação</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-white">🧠 25 Frases com Gatilhos Mentais</h4>
+                    <p className="text-gray-300 text-sm">Ative sua mente e mantenha-se em movimento com mensagens estratégicas</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-white">⏳ As Melhores Técnicas e Ferramentas de Gestão de Tempo</h4>
+                    <p className="text-gray-300 text-sm">Aplique métodos práticos para ganhar clareza e produtividade</p>
                   </div>
                 </div>
               </div>
