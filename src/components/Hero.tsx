@@ -1,3 +1,4 @@
+
 import { ArrowRight, Download, MessageSquare, Zap } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
@@ -43,33 +44,33 @@ const Hero = () => {
   };
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container bg-black relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
+      <div className="banner-container bg-black relative overflow-hidden min-h-[100vh] sm:min-h-[70vh] md:h-[750px] w-full">
         <div className="absolute inset-0 bg-black w-full">
-          <img src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" alt="Quebrando Correntes - Transformação" className={`w-full h-full object-cover opacity-70 grayscale ${isMobile ? 'object-right' : 'object-center'}`} />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-white"></div>
+          <img src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" alt="Quebrando Correntes - Transformação" className={`w-full h-full object-cover opacity-60 ${isMobile ? 'object-center' : 'object-center'}`} />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/60"></div>
         </div>
         
-        <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
-          <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
+        <div className="banner-overlay bg-transparent pt-8 sm:pt-16 md:pt-24 w-full min-h-[100vh] sm:min-h-auto">
+          <div className="w-full mx-auto px-6 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-4 sm:mb-6 text-shadow-lg" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
-                Destrave seu Potencial com o <br className="hidden xs:block" /> 
-                Guia Definitivo Contra a <br className="hidden xs:block" /> 
+              <motion.h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 sm:mb-8 px-2" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
+                Destrave seu Potencial com o<br className="block" /> 
+                Guia Definitivo Contra a<br className="block" /> 
                 Procrastinação
               </motion.h1>
-              <motion.p className="text-white mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
+              <motion.p className="text-white mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl font-medium px-4 leading-relaxed" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.9)' }}>
                 O método que está mudando a forma como milhares de pessoas tomam controle da própria vida.
               </motion.p>
-              <motion.p className="text-white mt-2 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)' }}>
+              <motion.p className="text-white mt-4 sm:mt-6 text-base sm:text-lg md:text-xl px-4 leading-relaxed" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.9)' }}>
                 Descubra como quebrar os ciclos de autossabotagem e criar uma rotina de ação, foco e disciplina, mesmo que você ache que já tentou de tudo.
               </motion.p>
-              <motion.div className="flex justify-center mt-6 sm:mt-8" variants={itemVariants}>
+              <motion.div className="flex justify-center mt-8 sm:mt-10 px-4" variants={itemVariants}>
                 <button 
-                  className="w-full sm:w-auto min-h-[52px] sm:min-h-[56px] px-8 sm:px-10 py-4 sm:py-5 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-base sm:text-lg font-bold max-w-xs sm:max-w-none"
+                  className="w-full sm:w-auto min-h-[60px] sm:min-h-[56px] px-8 sm:px-10 py-5 sm:py-5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-lg sm:text-xl font-bold max-w-md"
                   onClick={scrollToOffer}
                 >
                   Iniciar Transformação
-                  <Zap className="ml-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
+                  <Zap className="ml-3 w-6 h-6 group-hover:scale-110 transition-transform" />
                 </button>
               </motion.div>
             </motion.div>

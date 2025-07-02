@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Zap, CheckCircle, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,93 +10,93 @@ const OfferCard = () => {
   };
 
   return (
-    <section id="offer" className="bg-black text-white py-[25px] md:py-[40px] relative overflow-hidden">
+    <section id="offer" className="bg-black text-white py-12 md:py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black"></div>
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-orange-600 text-white rounded-full text-sm font-medium">
+      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 relative z-10">
+        <div className="text-center mb-8 md:mb-12">
+          <div className="inline-block mb-4 px-4 py-2 bg-orange-600 text-white rounded-full text-sm font-medium">
             🎯 Oferta Especial
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white leading-tight">
             Comece Agora sua Transformação
           </h2>
-          <div className="flex items-center justify-center space-x-4 mb-4">
-            <span className="text-2xl text-gray-400 line-through">De R$197,00</span>
-            <span className="text-4xl md:text-5xl font-bold text-orange-600">R$17,99</span>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-6">
+            <span className="text-xl sm:text-2xl text-gray-400 line-through">De R$197,00</span>
+            <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-600">R$17,99</span>
           </div>
-          <p className="text-gray-300 text-lg">
+          <p className="text-gray-300 text-base sm:text-lg px-4 leading-relaxed">
             Acesso completo ao método que já transformou milhares de vidas
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-2xl p-8 relative overflow-hidden">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-2xl p-6 sm:p-8 relative overflow-hidden">
             <div className="space-y-6">
               <div className="text-center">
-                <h3 className="text-2xl font-bold mb-2 text-white">O que você vai receber:</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white">O que você vai receber:</h3>
               </div>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Acesso imediato ao Guia Quebrando Correntes</h4>
-                    <p className="text-gray-300 text-sm">Método completo em formato digital</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">Acesso imediato ao Guia Quebrando Correntes</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Método completo em formato digital</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Técnicas comprovadas contra a procrastinação</h4>
-                    <p className="text-gray-300 text-sm">Baseadas em neurociência e psicologia comportamental</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">Técnicas comprovadas contra a procrastinação</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Baseadas em neurociência e psicologia comportamental</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">Sistema diário de ação para quebrar a procrastinação</h4>
-                    <p className="text-gray-300 text-sm">Roteiro estruturado para manter o foco e a consistência todos os dias</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">Sistema diário de ação para quebrar a procrastinação</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Roteiro estruturado para manter o foco e a consistência todos os dias</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">📱 100 Wallpapers Motivacionais</h4>
-                    <p className="text-gray-300 text-sm">Mantenha seu foco reforçado com imagens que inspiram ação</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">📱 100 Wallpapers Motivacionais</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Mantenha seu foco reforçado com imagens que inspiram ação</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3">
                   <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">🧠 25 Frases com Gatilhos Mentais</h4>
-                    <p className="text-gray-300 text-sm">Ative sua mente e mantenha-se em movimento com mensagens estratégicas</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">🧠 25 Frases com Gatilhos Mentais</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Ative sua mente e mantenha-se em movimento com mensagens estratégicas</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-3">
                   <Star className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-white">⏳ As Melhores Técnicas e Ferramentas de Gestão de Tempo</h4>
-                    <p className="text-gray-300 text-sm">Aplique métodos práticos para ganhar clareza e produtividade</p>
+                    <h4 className="font-semibold text-white text-base sm:text-lg">⏳ As Melhores Técnicas e Ferramentas de Gestão de Tempo</h4>
+                    <p className="text-gray-300 text-sm sm:text-base mt-1">Aplique métodos práticos para ganhar clareza e produtividade</p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-orange-900/30 to-yellow-900/30 rounded-lg p-6 border border-orange-500/30">
+              <div className="bg-gradient-to-r from-orange-900/30 to-yellow-900/30 rounded-lg p-4 sm:p-6 border border-orange-500/30">
                 <div className="text-center">
                   <p className="text-sm text-gray-300 mb-2">⏰ Oferta por tempo limitado</p>
-                  <p className="text-orange-400 font-semibold">Garante já o seu desconto de 81% OFF</p>
+                  <p className="text-orange-400 font-semibold text-base sm:text-lg">Garante já o seu desconto de 81% OFF</p>
                 </div>
               </div>
               
               <Button
                 onClick={handlePurchase}
-                className="w-full py-6 text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group"
+                className="w-full py-6 text-lg sm:text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px]"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Quero Iniciar Minha Transformação Agora
@@ -105,25 +106,25 @@ const OfferCard = () => {
               </Button>
               
               <div className="text-center">
-                <div className="flex items-center justify-center space-x-6 text-gray-300">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-6 text-gray-300">
                   <div className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-400 mr-1" />
-                    <span className="text-base font-medium">Pagamento Seguro</span>
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
+                    <span className="text-sm sm:text-base font-medium">Pagamento Seguro</span>
                   </div>
                   <div className="flex items-center">
-                    <Zap className="w-4 h-4 text-orange-400 mr-1" />
-                    <span className="text-lg font-semibold">Acesso Imediato</span>
+                    <Zap className="w-4 h-4 text-orange-400 mr-2" />
+                    <span className="text-sm sm:text-base font-semibold">Acesso Imediato</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-400 mr-1" />
-                    <span className="text-base font-medium">Garantia 7 dias</span>
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-2" />
+                    <span className="text-sm sm:text-base font-medium">Garantia 7 dias</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <p className="text-center text-sm text-gray-400 mt-4">
+          <p className="text-center text-sm text-gray-400 mt-6 px-4">
             Processamento seguro. Seus dados estão protegidos com criptografia SSL.
           </p>
         </div>
