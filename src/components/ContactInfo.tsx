@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { Zap, CheckCircle, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const OfferCard = () => {
   const handlePurchase = () => {
-    // Aqui você pode integrar com sistema de pagamento
-    window.open('https://pay.hotmart.com/seu-link-de-pagamento', '_blank');
+    // Redirecionamento para o novo link de checkout
+    window.open('https://go.disruptybr.com.br/xleccchllq', '_blank');
   };
 
   return (
