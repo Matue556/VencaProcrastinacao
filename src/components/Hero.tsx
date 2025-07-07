@@ -71,7 +71,7 @@ const Hero = () => {
               {/* Botão */}
               <motion.div className="flex justify-center mt-4 sm:mt-10 px-2 sm:px-4" variants={itemVariants}>
                 <button 
-                  className="w-full sm:w-auto min-h-[48px] sm:min-h-[56px] px-4 sm:px-10 py-3 sm:py-5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-sm sm:text-xl font-bold max-w-xs sm:max-w-md"
+                  className="w-full sm:w-auto min-h-[56px] sm:min-h-[60px] px-5 sm:px-12 py-4 sm:py-5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-base sm:text-xl font-bold max-w-xs sm:max-w-md"
                   onClick={scrollToOffer}
                 >
                   Iniciar Transformação
