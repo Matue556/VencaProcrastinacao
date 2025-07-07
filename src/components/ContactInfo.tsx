@@ -10,20 +10,20 @@ const OfferCard = () => {
   };
 
   return (
-    <section id="offer" className="bg-black text-white py-6 sm:py-12 md:py-16 relative overflow-hidden">
+    <section id="offer" className="bg-black text-white py-3 sm:py-12 md:py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black"></div>
       
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-4 sm:mb-8 md:mb-12">
-          <div className="inline-block mb-2 sm:mb-4 px-3 sm:px-4 py-1 sm:py-2 bg-orange-600 text-white rounded-full text-xs sm:text-sm font-medium">
+        <div className="text-center mb-2 sm:mb-8 md:mb-12">
+          <div className="inline-block mb-1 sm:mb-4 px-2 sm:px-4 py-1 sm:py-2 bg-orange-600 text-white rounded-full text-xs sm:text-sm font-medium">
             🎯 Oferta Especial
           </div>
-          <h2 className="text-lg sm:text-2xl md:text-4xl font-bold mb-3 sm:mb-6 text-white leading-tight">
+          <h2 className="text-base sm:text-2xl md:text-4xl font-bold mb-2 sm:mb-6 text-white leading-tight">
             Comece Agora sua Transformação
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 mb-3 sm:mb-6">
-            <span className="text-base sm:text-xl md:text-2xl text-gray-400 line-through">De R$197,00</span>
-            <span className="text-xl sm:text-3xl md:text-5xl font-bold text-orange-600">R$17,99</span>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-6">
+            <span className="text-sm sm:text-xl md:text-2xl text-gray-400 line-through">De R$197,00</span>
+            <span className="text-lg sm:text-3xl md:text-5xl font-bold text-orange-600">R$17,99</span>
           </div>
           <p className="text-gray-300 text-xs sm:text-base md:text-lg px-2 sm:px-4 leading-relaxed">
             Acesso completo ao método que já transformou milhares de vidas
@@ -31,15 +31,15 @@ const OfferCard = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl shadow-2xl p-3 sm:p-6 md:p-8 relative overflow-hidden">
-            <div className="space-y-3 sm:space-y-6">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-6 md:p-8 relative overflow-hidden">
+            <div className="space-y-2 sm:space-y-6">
               <div className="text-center">
-                <h3 className="text-base sm:text-xl md:text-2xl font-bold mb-2 sm:mb-4 text-white">O que você vai receber:</h3>
+                <h3 className="text-sm sm:text-xl md:text-2xl font-bold mb-1 sm:mb-4 text-white">O que você vai receber:</h3>
               </div>
               
-              <div className="space-y-2 sm:space-y-4">
+              <div className="space-y-1 sm:space-y-4">
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Acesso imediato ao Guia Quebrando Correntes</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Método completo em formato digital</p>
@@ -47,7 +47,7 @@ const OfferCard = () => {
                 </div>
                 
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Técnicas comprovadas contra a procrastinação</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Baseadas em neurociência e psicologia comportamental</p>
@@ -55,7 +55,7 @@ const OfferCard = () => {
                 </div>
                 
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Sistema diário de ação para quebrar a procrastinação</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Roteiro estruturado para manter o foco e a consistência todos os dias</p>
@@ -63,7 +63,7 @@ const OfferCard = () => {
                 </div>
                 
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-4 h-4 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">📱 100 Wallpapers Motivacionais</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Mantenha seu foco reforçado com imagens que inspiram ação</p>
@@ -71,7 +71,7 @@ const OfferCard = () => {
                 </div>
 
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-4 h-4 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">🧠 25 Frases com Gatilhos Mentais</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Ative sua mente e mantenha-se em movimento com mensagens estratégicas</p>
@@ -79,7 +79,7 @@ const OfferCard = () => {
                 </div>
 
                 <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-4 h-4 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">⏳ As Melhores Técnicas e Ferramentas de Gestão de Tempo</h4>
                     <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Aplique métodos práticos para ganhar clareza e produtividade</p>
@@ -90,17 +90,17 @@ const OfferCard = () => {
               <div className="bg-gradient-to-r from-orange-900/30 to-yellow-900/30 rounded-lg p-2 sm:p-4 md:p-6 border border-orange-500/30">
                 <div className="text-center">
                   <p className="text-xs sm:text-sm text-gray-300 mb-1 sm:mb-2">⏰ Oferta por tempo limitado</p>
-                  <p className="text-orange-400 font-semibold text-sm sm:text-base md:text-lg">Garante já o seu desconto de 81% OFF</p>
+                  <p className="text-orange-400 font-semibold text-xs sm:text-base md:text-lg">Garante já o seu desconto de 81% OFF</p>
                 </div>
               </div>
               
               <Button
                 onClick={handlePurchase}
-                className="w-full py-3 sm:py-6 text-sm sm:text-lg md:text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[44px] sm:min-h-[60px]"
+                className="w-full py-2 sm:py-6 text-xs sm:text-lg md:text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[40px] sm:min-h-[60px]"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   Quero Iniciar Minha Transformação Agora
-                  <Zap className="ml-2 sm:ml-3 w-4 h-4 sm:w-6 sm:h-6 group-hover:scale-125 transition-transform" />
+                  <Zap className="ml-1 sm:ml-3 w-3 h-3 sm:w-6 sm:h-6 group-hover:scale-125 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
@@ -124,7 +124,7 @@ const OfferCard = () => {
             </div>
           </div>
           
-          <p className="text-center text-xs sm:text-sm text-gray-400 mt-3 sm:mt-6 px-2 sm:px-4">
+          <p className="text-center text-xs sm:text-sm text-gray-400 mt-2 sm:mt-6 px-2 sm:px-4">
             Processamento seguro. Seus dados estão protegidos com criptografia SSL.
           </p>
         </div>
