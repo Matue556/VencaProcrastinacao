@@ -44,7 +44,7 @@ const Hero = () => {
   };
   
   return <motion.div className="relative w-full" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container bg-black relative overflow-hidden h-auto min-h-[4px] w-full py-4 sm:py-0">
+      <div className="banner-container bg-black relative overflow-hidden h-auto min-h-[20px] w-full py-4 sm:py-0">
         <div className="absolute inset-0 bg-black w-full">
           <img src="/lovable-uploads/4bfa0d71-3ed2-4693-90b6-35142468907f.png" alt="Quebrando Correntes - Transformação" className={`w-full h-full object-cover opacity-60 ${isMobile ? 'object-center' : 'object-center'}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/60"></div>
