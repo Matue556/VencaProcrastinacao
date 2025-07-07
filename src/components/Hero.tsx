@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         
         {/* Removendo completamente qualquer espaçamento superior */}
-        <div className="relative flex items-start justify-center w-full pt-10 sm:pt-0">
+        <div className="relative flex items-start justify-center w-full pt-15 sm:pt-0">
           <div className="w-full mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-auto min-h-[40vh] sm:min-h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               {/* Título principal sem margens superiores */}
