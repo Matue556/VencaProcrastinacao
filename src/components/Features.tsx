@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Target, Brain, Rocket, ArrowRight, Zap } from "lucide-react";
 import { cn } from '@/lib/utils';
@@ -21,7 +20,7 @@ const Features = () => {
     },
     {
       icon: <Brain className="w-10 h-10 text-white transition-transform duration-300 transform" />,
-      title: "Negócios & Projetos",
+      title: "Negócios & Projetos", 
       description: "Execute ideias que estavam travadas, supere a autossabotagem e crie consistência.",
       image: "https://i.imgur.com/6NXUYEl.jpeg"
     },
@@ -101,41 +100,41 @@ const Features = () => {
 
   return <>
       {/* Seção Principal com Cards Transformados */}
-      <section className="relative bg-black overflow-hidden py-16 md:py-24 w-full">
-        <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
-          <div className="text-center mb-16 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-sm font-medium">
+      <section className="relative bg-black overflow-hidden py-8 sm:py-16 md:py-24 w-full">
+        <div className="w-full px-3 sm:px-6 lg:px-8" ref={featuresRef}> 
+          <div className="text-center mb-8 sm:mb-16 max-w-3xl mx-auto feature-item">
+            <div className="inline-block mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-xs sm:text-sm font-medium">
               🔥 Três Pilares da Transformação
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-6 text-white">
               O Que Você Vai Dominar
             </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-xl text-gray-300 leading-relaxed px-2">
               Descubra os três fundamentos que vão revolucionar sua relação com a produtividade e ação.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {mainFeatures.map((feature, index) => (
               <div 
                 key={index} 
-                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
                 style={{
                   transitionDelay: `${index * 150}ms`
                 }}
               >
                 {/* Traço laranja no topo */}
-                <div className="absolute top-0 right-0 w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
+                <div className="absolute top-0 right-0 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
                 
                 {/* Glow effect no hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative z-10">
                   {/* Ícone centralizado */}
-                  <div className="flex justify-center mb-6">
+                  <div className="flex justify-center mb-4 sm:mb-6">
                     <div className="relative">
                       <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-xl group-hover:bg-orange-500/30 transition-all duration-500"></div>
-                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
+                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-3 sm:p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
                         <div className="text-orange-500 group-hover:text-orange-400 transition-colors duration-300">
                           {feature.icon}
                         </div>
@@ -145,16 +144,16 @@ const Features = () => {
                   
                   {/* Conteúdo */}
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                       {feature.description}
                     </p>
                   </div>
                   
                   {/* Indicador de progresso */}
-                  <div className="absolute bottom-6 left-8 right-8">
+                  <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-8 right-4 sm:right-8">
                     <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
                     </div>
@@ -166,23 +165,23 @@ const Features = () => {
         </div>
       </section>
 
-      <section id="applications" className="relative bg-white overflow-hidden py-10 md:py-[50px] w-full">
-        <div className="w-full px-4 sm:px-6 lg:px-8" ref={featuresRef}> 
-          <div className="text-center mb-10 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">
+      <section id="applications" className="relative bg-white overflow-hidden py-8 sm:py-10 md:py-[50px] w-full">
+        <div className="w-full px-3 sm:px-6 lg:px-8" ref={featuresRef}> 
+          <div className="text-center mb-6 sm:mb-10 max-w-3xl mx-auto feature-item">
+            <div className="inline-block mb-2 px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs sm:text-sm font-medium">
               Como o Método É Aplicado
             </div>
-            <h2 className="text-3xl font-bold mb-4">Aplicações Reais do Quebrando Correntes</h2>
-            <p className="text-gray-600 mt-4">
+            <h2 className="text-xl sm:text-3xl font-bold mb-2 sm:mb-4">Aplicações Reais do Quebrando Correntes</h2>
+            <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-4 px-2">
               Descubra como pequenas ações diárias podem gerar grandes mudanças em sua vida pessoal, profissional e mental.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-5">
             {applications.map((application, index) => (
               <div 
                 key={index} 
-                className="feature-item rounded-xl overflow-hidden transform transition-all duration-500 relative shadow-lg hover:-translate-y-1 h-[280px]"
+                className="feature-item rounded-lg sm:rounded-xl overflow-hidden transform transition-all duration-500 relative shadow-lg hover:-translate-y-1 h-[240px] sm:h-[280px]"
                 style={{
                   transitionDelay: `${index * 100}ms`
                 }}
@@ -203,10 +202,10 @@ const Features = () => {
                   )}></div>
                 </div>
                 
-                <div className="relative z-10 flex flex-col justify-between p-6 h-full">
+                <div className="relative z-10 flex flex-col justify-between p-4 sm:p-6 h-full">
                   <div>
                     <div className={cn(
-                      "inline-block p-3 bg-orange-600/40 backdrop-blur-sm rounded-lg transition-all duration-300 transform mb-4",
+                      "inline-block p-2 sm:p-3 bg-orange-600/40 backdrop-blur-sm rounded-lg transition-all duration-300 transform mb-3 sm:mb-4",
                       hoveredFeature === index 
                         ? "hover:scale-110" 
                         : ""
@@ -215,21 +214,21 @@ const Features = () => {
                         {application.icon}
                       </div>
                     </div>
-                    <h3 className="text-xl mb-2 font-semibold text-white">
+                    <h3 className="text-lg sm:text-xl mb-2 font-semibold text-white">
                       {application.title}
                     </h3>
-                    <p className="text-sm text-white/90">
+                    <p className="text-xs sm:text-sm text-white/90">
                       {application.description}
                     </p>
                   </div>
-                  <div className={`h-0.5 bg-white/70 mt-3 transition-all duration-500 ${hoveredFeature === index ? 'w-full' : 'w-0'}`}></div>
+                  <div className={`h-0.5 bg-white/70 mt-2 sm:mt-3 transition-all duration-500 ${hoveredFeature === index ? 'w-full' : 'w-0'}`}></div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto">
+          <div className="text-center mt-8 sm:mt-12 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto max-w-xs sm:max-w-none">
               Iniciar Transformação Agora
               <Zap className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
             </Button>
@@ -237,42 +236,42 @@ const Features = () => {
         </div>
       </section>
       
-      <section id="method" className="relative bg-black overflow-hidden py-16 md:py-24 w-full">
-        <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-16 max-w-3xl mx-auto feature-item">
-            <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-sm font-medium">
+      <section id="method" className="relative bg-black overflow-hidden py-8 sm:py-16 md:py-24 w-full">
+        <div className="w-full px-3 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-8 sm:mb-16 max-w-3xl mx-auto feature-item">
+            <div className="inline-block mb-3 sm:mb-4 px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-xs sm:text-sm font-medium">
               Nosso Método
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-6 text-white">
               Do Caos à Ação
             </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-base sm:text-xl text-gray-300 leading-relaxed px-2">
               Baseado em ciência e experiências reais, o método do "Quebrando Correntes" guia você em uma jornada 
               de 30 dias com práticas simples, profundas e transformadoras.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-16">
             {methodSteps.map((step, index) => (
               <div 
                 key={index} 
-                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
                 style={{
                   transitionDelay: `${index * 150}ms`
                 }}
               >
                 {/* Traço laranja no topo */}
-                <div className="absolute top-0 right-0 w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
+                <div className="absolute top-0 right-0 w-16 sm:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
                 
                 {/* Glow effect no hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative z-10">
                   {/* Ícone centralizado */}
-                  <div className="flex justify-center mb-6">
+                  <div className="flex justify-center mb-4 sm:mb-6">
                     <div className="relative">
                       <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-xl group-hover:bg-orange-500/30 transition-all duration-500"></div>
-                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
+                      <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-3 sm:p-4 group-hover:bg-white/10 transition-all duration-300 border border-white/10">
                         <div className="text-orange-500 group-hover:text-orange-400 transition-colors duration-300">
                           {step.icon}
                         </div>
@@ -282,16 +281,16 @@ const Features = () => {
                   
                   {/* Conteúdo */}
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-2xl font-bold mb-2 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
                       {step.title}
                     </h3>
-                    <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                    <p className="text-sm sm:text-base text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                       {step.description}
                     </p>
                   </div>
                   
                   {/* Indicador de progresso */}
-                  <div className="absolute bottom-6 left-8 right-8">
+                  <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-8 right-4 sm:right-8">
                     <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
                     </div>
@@ -301,32 +300,32 @@ const Features = () => {
             ))}
           </div>
           
-          <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 md:p-12 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 overflow-hidden relative group">
+          <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 overflow-hidden relative group">
             {/* Traço laranja no topo */}
-            <div className="absolute top-0 right-0 w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
+            <div className="absolute top-0 right-0 w-20 sm:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-orange-500 to-orange-600"></div>
             
             {/* Glow effect no hover */}
             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             <div className="relative z-10 max-w-xl mx-auto text-center">
-              <div className="relative inline-block mb-4">
+              <div className="relative inline-block mb-3 sm:mb-4">
                 <div className="absolute inset-0 bg-orange-500/10 rounded-full animate-pulse-slow"></div>
-                <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-4 border border-orange-200/20 shadow-md">
-                  <Rocket className="h-10 w-10 text-orange-500" />
+                <div className="relative bg-white/5 backdrop-blur-sm rounded-full p-3 sm:p-4 border border-orange-200/20 shadow-md">
+                  <Rocket className="h-8 w-8 sm:h-10 sm:w-10 text-orange-500" />
                 </div>
               </div>
-              <h3 className="text-3xl font-bold mb-4 text-white">Transformação Completa</h3>
-              <p className="text-xl text-gray-300 leading-relaxed">30 dias para quebrar as correntes da procrastinação</p>
-              <div className="flex justify-center mt-6 space-x-2">
-                <span className="inline-block w-3 h-3 rounded-full bg-orange-300 animate-pulse"></span>
-                <span className="inline-block w-3 h-3 rounded-full bg-orange-500 animate-pulse animation-delay-200"></span>
-                <span className="inline-block w-3 h-3 rounded-full bg-orange-700 animate-pulse animation-delay-400"></span>
+              <h3 className="text-xl sm:text-3xl font-bold mb-2 sm:mb-4 text-white">Transformação Completa</h3>
+              <p className="text-base sm:text-xl text-gray-300 leading-relaxed">30 dias para quebrar as correntes da procrastinação</p>
+              <div className="flex justify-center mt-4 sm:mt-6 space-x-2">
+                <span className="inline-block w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-orange-300 animate-pulse"></span>
+                <span className="inline-block w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-orange-500 animate-pulse animation-delay-200"></span>
+                <span className="inline-block w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-orange-700 animate-pulse animation-delay-400"></span>
               </div>
             </div>
           </div>
           
-          <div className="text-center mt-12">
-            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center">
+          <div className="text-center mt-8 sm:mt-12">
+            <Button onClick={scrollToOffer} className="inline-flex items-center px-4 sm:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all group w-full sm:w-auto justify-center max-w-xs sm:max-w-none">
               Começar Minha Transformação
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
