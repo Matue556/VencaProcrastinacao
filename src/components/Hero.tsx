@@ -69,7 +69,7 @@ const Hero = () => {
                 Descubra como quebrar os ciclos de autossabotagem e criar uma rotina de ação, foco e disciplina, mesmo que você ache que já tentou de tudo.
               </motion.p>
               {/* Botão */}
-              <motion.div className="flex justify-center mt-6 sm:mt-10 px-2 sm:px-4" variants={itemVariants}>
+              <motion.div className="flex justify-center mt-10 sm:mt-10 px-2 sm:px-4" variants={itemVariants}>
                 <button 
                   className="w-full sm:w-auto min-h-[56px] sm:min-h-[60px] px-5 sm:px-12 py-4 sm:py-5 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-base sm:text-xl font-bold max-w-xs sm:max-w-md"
                   onClick={scrollToOffer}
