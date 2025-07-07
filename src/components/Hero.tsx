@@ -52,7 +52,7 @@ const Hero = () => {
         
         {/* Removendo completamente qualquer espaçamento superior */}
         <div className="absolute inset-0 flex items-center justify-center w-full">
-          <div className="w-full mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
+          <div className="w-full mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-auto min-h-[40vh] sm:min-h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               {/* Título principal sem margens superiores */}
               <motion.h1 className="text-white text-lg leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-8 px-1 sm:px-2" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
