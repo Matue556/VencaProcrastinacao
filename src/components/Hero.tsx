@@ -50,12 +50,12 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/60"></div>
         </div>
         
-        {/* Removendo padding-top completamente no mobile */}
-        <div className="banner-overlay bg-transparent pt-4 sm:pt-16 md:pt-24 w-full min-h-[100vh] sm:min-h-auto">
-          <div className="w-full mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-start sm:justify-center h-full">
-            <motion.div className="w-full max-w-4xl text-center mt-4 sm:mt-0" variants={itemVariants}>
-              {/* Reduzindo significativamente o tamanho das fontes no mobile */}
-              <motion.h1 className="text-white text-base leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-8 px-1 sm:px-2" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
+        {/* Removendo completamente qualquer padding no mobile */}
+        <div className="banner-overlay bg-transparent p-0 sm:pt-16 md:pt-24 w-full min-h-[100vh] sm:min-h-auto">
+          <div className="w-full mx-auto px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
+            <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
+              {/* Removendo margem superior no mobile */}
+              <motion.h1 className="text-white text-base leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-8 px-1 sm:px-2 mt-0" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
                 Destrave seu Potencial com o<br className="block" /> 
                 Guia Definitivo Contra a<br className="block" /> 
                 Procrastinação
