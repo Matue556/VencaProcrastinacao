@@ -5,3 +5,4 @@ Brevo.push([
         client_key: (location.search.match(/[?&]key=([^&]*)/) || [])[1],
     },
 ]);
+Movendo sw.js para a pasta public
