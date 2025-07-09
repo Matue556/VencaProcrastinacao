@@ -41,7 +41,7 @@ const UrgencySection = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <span className="text-orange-600 font-semibold">👉 Mais de 2.000 pessoas já tomaram essa decisão.</span> Se você está vendo essa página agora, essa pode ser a sua chance de destravar o que está travado há meses.
-          </p>
+          </motion.p>
         </div>
       </div>
     </motion.section>
