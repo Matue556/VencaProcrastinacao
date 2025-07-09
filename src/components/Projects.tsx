@@ -32,7 +32,7 @@ const Testimonials = () => {
       quote: "Sofri por anos com a procrastinação... Esse método me fez levantar da cadeira e agir. Hoje sou mais produtiva do que nunca!",
       author: "Marina C.",
       role: "Designer Gráfica",
-      avatar: "/lovable-uploads/bb6e9a17-8122-498b-810e-c94ef2a23410.png"
+      avatar: "https://imgur.com/uzASPgc.png"
     },
     {
       quote: "Nunca pensei que um simples guia pudesse causar tanto impacto. Meu desempenho na faculdade dobrou. É direto, prático e poderoso.",
@@ -44,7 +44,7 @@ const Testimonials = () => {
       quote: "Passei a vida adiando meus objetivos. Agora, acordo com foco e clareza. Foi um divisor de águas pra mim.",
       author: "Renata V.",
       role: "Psicóloga",
-      avatar: "/lovable-uploads/a5e5e703-0b43-447b-b83f-79bad001a7a6.png"
+      avatar: "https://imgur.com/XzO4GkO.png"
     }
   ];
 
