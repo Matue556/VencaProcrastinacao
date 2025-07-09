@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import OfferCard from '@/components/ContactInfo';
+import MobileFixedCTA from '@/components/MobileFixedCTA';
 
 type PageLayoutProps = {
   children: React.ReactNode;
@@ -24,6 +25,7 @@ const PageLayout = ({ children, showDownload = true }: PageLayoutProps) => {
       {children}
       {showDownload && <OfferCard />}
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };
