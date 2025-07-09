@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { CheckCircle, Target, Brain, Rocket, ArrowRight, Zap } from "lucide-react";
 import { cn } from '@/lib/utils';
@@ -119,7 +118,7 @@ const Features = () => {
             {mainFeatures.map((feature, index) => (
               <div 
                 key={index} 
-                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-lg sm:rounded-3xl p-2 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-lg sm:rounded-3xl p-2 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden min-h-[160px] sm:min-h-[280px]"
                 style={{
                   transitionDelay: `${index * 150}ms`
                 }}
@@ -130,7 +129,7 @@ const Features = () => {
                 {/* Glow effect no hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex flex-col">
                   {/* Ícone centralizado */}
                   <div className="flex justify-center mb-2 sm:mb-6">
                     <div className="relative">
@@ -144,8 +143,8 @@ const Features = () => {
                   </div>
                   
                   {/* Conteúdo */}
-                  <div className="text-left">
-                    <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                  <div className="text-left flex-1 pb-4 sm:pb-8">
+                    <h3 className="text-sm sm:text-2xl font-bold mb-2 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300 leading-tight">
                       {feature.title}
                     </h3>
                     <p className="text-xs sm:text-base text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
@@ -153,8 +152,8 @@ const Features = () => {
                     </p>
                   </div>
                   
-                  {/* Indicador de progresso */}
-                  <div className="absolute bottom-2 sm:bottom-6 left-2 sm:left-8 right-2 sm:right-8">
+                  {/* Indicador de progresso - posicionado no final do card com margem */}
+                  <div className="absolute bottom-3 sm:bottom-6 left-2 sm:left-8 right-2 sm:right-8">
                     <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
                     </div>
@@ -256,7 +255,7 @@ const Features = () => {
             {methodSteps.map((step, index) => (
               <div 
                 key={index} 
-                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-lg sm:rounded-3xl p-2 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden"
+                className="feature-item group relative bg-gradient-to-br from-gray-900 to-black rounded-lg sm:rounded-3xl p-2 sm:p-8 border border-gray-800 hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-500/10 overflow-hidden min-h-[140px] sm:min-h-[260px]"
                 style={{
                   transitionDelay: `${index * 150}ms`
                 }}
@@ -267,7 +266,7 @@ const Features = () => {
                 {/* Glow effect no hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex flex-col">
                   {/* Ícone centralizado */}
                   <div className="flex justify-center mb-2 sm:mb-6">
                     <div className="relative">
@@ -281,8 +280,8 @@ const Features = () => {
                   </div>
                   
                   {/* Conteúdo */}
-                  <div className="text-center">
-                    <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300">
+                  <div className="text-center flex-1 pb-4 sm:pb-8">
+                    <h3 className="text-sm sm:text-2xl font-bold mb-2 sm:mb-4 text-white group-hover:text-orange-50 transition-colors duration-300 leading-tight">
                       {step.title}
                     </h3>
                     <p className="text-xs sm:text-base text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
@@ -290,8 +289,8 @@ const Features = () => {
                     </p>
                   </div>
                   
-                  {/* Indicador de progresso */}
-                  <div className="absolute bottom-2 sm:bottom-6 left-2 sm:left-8 right-2 sm:right-8">
+                  {/* Indicador de progresso - posicionado no final do card com margem */}
+                  <div className="absolute bottom-3 sm:bottom-6 left-2 sm:left-8 right-2 sm:right-8">
                     <div className="h-0.5 bg-gray-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-orange-500 to-orange-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
                     </div>
