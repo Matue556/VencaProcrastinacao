@@ -38,7 +38,7 @@ const Testimonials = () => {
       quote: "Nunca pensei que um simples guia pudesse causar tanto impacto. Meu desempenho na faculdade dobrou. É direto, prático e poderoso.",
       author: "Eduardo F.",
       role: "Estudante de Direito",
-      avatar: "/lovable-uploads/ef553f47-3fcd-4071-9cd2-600bc1aef963.png"
+      avatar: "https://imgur.com/r8OPw3j.png"
     },
     {
       quote: "Passei a vida adiando meus objetivos. Agora, acordo com foco e clareza. Foi um divisor de águas pra mim.",
