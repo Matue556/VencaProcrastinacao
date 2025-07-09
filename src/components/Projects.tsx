@@ -1,7 +1,14 @@
+
 import { Quote, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useEffect } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
+  const isMobile = useIsMobile();
+
   const testimonials = [
     {
       quote: "Esse eBook foi como um tapa na cara que eu precisava. Parei de adiar tudo e hoje tenho rotina, foco e resultados.",
@@ -20,6 +27,24 @@ const Testimonials = () => {
       author: "Carlos R.",
       role: "Desenvolvedor",
       avatar: "/lovable-uploads/ef553f47-3fcd-4071-9cd2-600bc1aef963.png"
+    },
+    {
+      quote: "Sofri por anos com a procrastinação... Esse método me fez levantar da cadeira e agir. Hoje sou mais produtiva do que nunca!",
+      author: "Marina C.",
+      role: "Designer Gráfica",
+      avatar: "/lovable-uploads/bb6e9a17-8122-498b-810e-c94ef2a23410.png"
+    },
+    {
+      quote: "Nunca pensei que um simples guia pudesse causar tanto impacto. Meu desempenho na faculdade dobrou. É direto, prático e poderoso.",
+      author: "Eduardo F.",
+      role: "Estudante de Direito",
+      avatar: "/lovable-uploads/ef553f47-3fcd-4071-9cd2-600bc1aef963.png"
+    },
+    {
+      quote: "Passei a vida adiando meus objetivos. Agora, acordo com foco e clareza. Foi um divisor de águas pra mim.",
+      author: "Renata V.",
+      role: "Psicóloga",
+      avatar: "/lovable-uploads/a5e5e703-0b43-447b-b83f-79bad001a7a6.png"
     }
   ];
 
@@ -65,47 +90,68 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          variants={containerVariants}
-        >
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300"
-              variants={itemVariants}
-              whileHover={{ y: -5 }}
-            >
-              <div className="absolute top-6 right-6 text-orange-200">
-                <Quote className="w-8 h-8" />
-              </div>
-              
-              <div className="mb-6">
-                <div className="flex text-orange-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="text-gray-700 text-lg leading-relaxed italic">
-                  "{testimonial.quote}"
-                </blockquote>
-              </div>
-              
-              <div className="flex items-center">
-                <div className="mr-4">
-                  <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
-                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+        <motion.div variants={containerVariants}>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+              slidesToScroll: isMobile ? 1 : 3,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
+            className="w-full max-w-7xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/3">
+                  <motion.div
+                    className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 h-full"
+                    variants={itemVariants}
+                    whileHover={{ y: -5 }}
+                  >
+                    <div className="absolute top-6 right-6 text-orange-200">
+                      <Quote className="w-8 h-8" />
+                    </div>
+                    
+                    <div className="mb-6">
+                      <div className="flex text-orange-400 mb-4">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 fill-current" />
+                        ))}
+                      </div>
+                      <blockquote className="text-gray-700 text-lg leading-relaxed italic">
+                        "{testimonial.quote}"
+                      </blockquote>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <div className="mr-4">
+                        <img 
+                          src={testimonial.avatar} 
+                          alt={testimonial.author}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
+                        <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            {!isMobile && (
+              <>
+                <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 hover:bg-white shadow-lg border-gray-200" />
+                <CarouselNext className="hidden md:flex -right-12 bg-white/90 hover:bg-white shadow-lg border-gray-200" />
+              </>
+            )}
+          </Carousel>
         </motion.div>
 
         <motion.div 
