@@ -5,7 +5,6 @@ import Features from '@/components/Features';
 import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
 import SEO from '@/components/SEO';
-import UrgencySection from '@/components/UrgencySection';
 import PriceJustification from '@/components/PriceJustification';
 import ConsequenceSection from '@/components/ConsequenceSection';
 
@@ -22,7 +21,6 @@ const Index = () => {
       <Features />
       <WhyQuebrando />
       <Testimonials />
-      <UrgencySection />
       <ConsequenceSection />
     </PageLayout>
   );
