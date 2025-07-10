@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import OfferCard from '@/components/ContactInfo';
+import PriceJustification from '@/components/PriceJustification';
 import MobileFixedCTA from '@/components/MobileFixedCTA';
 
 type PageLayoutProps = {
@@ -23,7 +24,12 @@ const PageLayout = ({ children, showDownload = true }: PageLayoutProps) => {
     <div className="min-h-0 bg-white w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
       {children}
-      {showDownload && <OfferCard />}
+      {showDownload && (
+        <>
+          <OfferCard />
+          <PriceJustification />
+        </>
+      )}
       <Footer />
       <MobileFixedCTA />
     </div>

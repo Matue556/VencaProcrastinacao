@@ -23,7 +23,6 @@ const Index = () => {
       <WhyQuebrando />
       <Testimonials />
       <UrgencySection />
-      <PriceJustification />
       <ConsequenceSection />
     </PageLayout>
   );
