@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Zap, CheckCircle, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import CountdownTimer from './CountdownTimer';
 
 const OfferCard = () => {
   const handlePurchase = () => {
@@ -14,6 +14,9 @@ const OfferCard = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black"></div>
       
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
+        {/* Contador regressivo no topo */}
+        <CountdownTimer />
+        
         <div className="text-center mb-2 sm:mb-8 md:mb-12">
           <div className="inline-block mb-1 sm:mb-4 px-2 sm:px-4 py-1 sm:py-2 bg-orange-600 text-white rounded-full text-xs sm:text-sm font-medium">
             🎯 Oferta Especial
