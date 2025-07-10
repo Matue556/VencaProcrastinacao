@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Zap, CheckCircle, Star, Users, TrendingUp } from 'lucide-react';
+import { Zap, CheckCircle, Star, Users, TrendingUp, Unlock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CountdownTimer from './CountdownTimer';
 
@@ -11,124 +11,165 @@ const OfferCard = () => {
   };
 
   return (
-    <section id="offer" className="bg-black text-white py-3 sm:py-12 md:py-16 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-900/20 to-black"></div>
+    <section id="offer" className="bg-gradient-to-br from-gray-50 to-white text-gray-900 py-6 sm:py-16 md:py-20 relative overflow-hidden border-t-4 border-orange-500">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-blue-50/30"></div>
       
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
         {/* Contador regressivo no topo */}
         <CountdownTimer />
 
-        <div className="text-center mb-2 sm:mb-8 md:mb-12">
-          <div className="inline-block mb-1 sm:mb-4 px-2 sm:px-4 py-1 sm:py-2 bg-orange-600 text-white rounded-full text-xs sm:text-sm font-medium">
-            🎯 Oferta Especial
+        <div className="text-center mb-4 sm:mb-8 md:mb-12">
+          <div className="inline-block mb-2 sm:mb-4 px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-full text-sm sm:text-base font-bold shadow-lg">
+            🎯 Sua Chance de Quebrar as Correntes Que Te Prendem
           </div>
-          <h2 className="text-base sm:text-2xl md:text-4xl font-bold mb-2 sm:mb-6 text-white leading-tight">
-            Comece Agora sua Transformação
+          <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-6 text-gray-800 leading-tight max-w-3xl mx-auto">
+            Você está a um clique da decisão que pode mudar sua rotina, seus projetos e seu futuro
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-6">
-            <span className="text-sm sm:text-xl md:text-2xl text-gray-400 line-through">De R$197,00</span>
-            <span className="text-lg sm:text-3xl md:text-5xl font-bold text-orange-600">R$17,99</span>
-          </div>
-          <p className="text-gray-300 text-xs sm:text-base md:text-lg px-2 sm:px-4 leading-relaxed">
-            Acesso completo ao método que já transformou milhares de vidas
-          </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-6 md:p-8 relative overflow-hidden">
-            <div className="space-y-2 sm:space-y-6">
-              <div className="text-center">
-                <h3 className="text-sm sm:text-xl md:text-2xl font-bold mb-1 sm:mb-4 text-white">O que você vai receber:</h3>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-sm border-2 border-orange-200 rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 md:p-10 relative overflow-hidden">
+            {/* Gradiente sutil de fundo */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-50/50 to-blue-50/50 rounded-xl sm:rounded-2xl"></div>
+            
+            <div className="relative z-10 space-y-4 sm:space-y-6 md:space-y-8">
+              {/* Texto persuasivo inicial */}
+              <div className="text-center space-y-3 sm:space-y-4">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  Mais de <strong className="text-orange-600">2000 pessoas</strong> estão agora mesmo executando projetos, estudando com foco ou acordando com clareza de propósito.
+                </p>
+                <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
+                  A única diferença entre elas e você?
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 bg-orange-50 p-3 sm:p-4 rounded-lg border-l-4 border-orange-500">
+                  👉 <strong>Elas decidiram agir</strong>, mesmo com medo, mesmo sem tempo, mesmo sem motivação.
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+                  Você está levando muito mais do que um simples método.<br/>
+                  Está levando um método <strong className="text-blue-600">real, validado e direto</strong>, que finalmente funciona no mundo real. <em>sem precisar acordar às 5h da manhanha ou virar uma máquina.</em>
+                </p>
               </div>
-              
-              <div className="space-y-1 sm:space-y-4">
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Acesso imediato ao Guia Quebrando Correntes</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Método completo em formato digital</p>
-                  </div>
+
+              {/* Preços em destaque */}
+              <div className="text-center bg-gradient-to-r from-orange-100 to-yellow-100 p-4 sm:p-6 rounded-lg border border-orange-200">
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-3 sm:mb-4">
+                  <span className="text-lg sm:text-2xl md:text-3xl text-gray-500 line-through">De R$197,00</span>
+                  <span className="text-2xl sm:text-4xl md:text-6xl font-bold text-orange-600">R$17,99</span>
                 </div>
+                <p className="text-orange-700 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado ⚡</p>
+              </div>
+
+              {/* Lista de benefícios */}
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-center text-gray-800 mb-4 sm:mb-6">
+                  ✅ O que você vai desbloquear por R$17,99:
+                </h3>
                 
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Técnicas comprovadas contra a procrastinação</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Baseadas em neurociência e psicologia comportamental</p>
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-500 mt-0.5 sm:mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">📘 Guia Completo Quebrando Correntes</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">(baseado em neurociência e comportamento real)</p>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <CheckCircle className="w-3 h-3 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">Sistema diário de ação para quebrar a procrastinação</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Roteiro estruturado para manter o foco e a consistência todos os dias</p>
+                  
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-500 mt-0.5 sm:mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">🧠 Sistema simples mas poderoso</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">Para eliminar a procrastinação em poucos dias</p>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">📱 100 Wallpapers Motivacionais</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Mantenha seu foco reforçado com imagens que inspiram ação</p>
+                  
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-500 mt-0.5 sm:mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">🎯 Técnicas e ferramentas que funcionam para todos</h4>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">🧠 25 Frases com Gatilhos Mentais</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Ative sua mente e mantenha-se em movimento com mensagens estratégicas</p>
+                {/* Bônus */}
+                <div className="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-200 mt-4 sm:mt-6">
+                  <h4 className="font-semibold text-blue-800 text-sm sm:text-base mb-2 sm:mb-3">🎁 3 bônus práticos para ativar o foco no dia a dia:</h4>
+                  <div className="space-y-1 sm:space-y-2">
+                    <div className="flex items-start space-x-2">
+                      <Star className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-blue-700 text-xs sm:text-sm">25 Frases de Gatilhos Mentais Para Usar No Dia a Dia</span>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <Star className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-blue-700 text-xs sm:text-sm">Wallpapers Motivacionais Para Manter o Foco</span>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <Star className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-blue-700 text-xs sm:text-sm">As Melhores Técnicas e Ferramentas de Gestão de Tempo</span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-2 sm:space-x-3">
-                  <Star className="w-3 h-3 sm:w-6 sm:h-6 text-orange-400 mt-0.5 sm:mt-1 flex-shrink-0" />
+                {/* Garantias */}
+                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-600 bg-green-50 p-3 sm:p-4 rounded-lg">
+                  <div className="flex items-center">
+                    <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-1 sm:mr-2" />
+                    <span className="text-xs sm:text-sm font-medium">🔐 Acesso imediato e vitalício</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-1 sm:mr-2" />
+                    <span className="text-xs sm:text-sm font-medium">🛡️ Garantia de 7 dias sem risco</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Diferenciação */}
+              <div className="bg-gray-50 p-4 sm:p-6 rounded-lg border border-gray-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-center">
                   <div>
-                    <h4 className="font-semibold text-white text-xs sm:text-base md:text-lg">⏳ As Melhores Técnicas e Ferramentas de Gestão de Tempo</h4>
-                    <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-0.5 sm:mt-1">Aplique métodos práticos para ganhar clareza e produtividade</p>
+                    <p className="text-red-600 font-semibold text-xs sm:text-sm mb-1">❌ Não é motivacional vazio.</p>
+                    <p className="text-red-600 font-semibold text-xs sm:text-sm">❌ Não é mais uma promessa furada.</p>
+                  </div>
+                  <div>
+                    <p className="text-green-600 font-semibold text-xs sm:text-sm">✅ É um caminho prático que já mudou vidas, e pode mudar a sua.</p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-gradient-to-r from-orange-900/30 to-yellow-900/30 rounded-lg p-2 sm:p-4 md:p-6 border border-orange-500/30">
-                <div className="text-center">
-                  <p className="text-xs sm:text-sm text-gray-300 mb-1 sm:mb-2">⏰ Oferta por tempo limitado</p>
-                  <p className="text-orange-400 font-semibold text-xs sm:text-base md:text-lg">Garante já o seu desconto de 81% OFF</p>
-                </div>
-              </div>
-              
+              {/* Botão principal */}
               <Button
                 onClick={handlePurchase}
-                className="w-full py-2 sm:py-6 text-xs sm:text-lg md:text-xl bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[40px] sm:min-h-[60px]"
+                className="w-full py-3 sm:py-6 md:py-8 text-sm sm:text-lg md:text-xl bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[48px] sm:min-h-[70px] border-2 border-white"
               >
                 <span className="relative z-10 flex items-center justify-center">
-                  Quero Iniciar Minha Transformação Agora
-                  <Zap className="ml-1 sm:ml-3 w-3 h-3 sm:w-6 sm:h-6 group-hover:scale-125 transition-transform" />
+                  👉 Sim, Quero Iniciar Minha Transformação Agora por 81% OFF
+                  <Unlock className="ml-2 sm:ml-3 w-4 h-4 sm:w-6 sm:h-6 group-hover:scale-125 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
-              
-              <div className="text-center">
-                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-400 mr-1 sm:mr-2" />
-                    <span className="text-xs sm:text-sm md:text-base font-medium">Pagamento Seguro</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400 mr-1 sm:mr-2" />
-                    <span className="text-xs sm:text-sm md:text-base font-semibold">Acesso Imediato</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-400 mr-1 sm:mr-2" />
-                    <span className="text-xs sm:text-sm md:text-base font-medium">Garantia 7 dias</span>
-                  </div>
-                </div>
+
+              {/* Bloco final de persuasão emocional */}
+              <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 sm:p-6 md:p-8 rounded-lg border-l-4 border-orange-500 text-center space-y-3 sm:space-y-4">
+                <h4 className="font-bold text-gray-800 text-sm sm:text-base md:text-lg">E se você não fizer nada agora?</h4>
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
+                  A rotina segue igual. Os planos continuam empilhados.<br/>
+                  A frustração de saber o que fazer — e não fazer — vai se repetir.
+                </p>
+                <p className="font-semibold text-blue-700 text-sm sm:text-base md:text-lg">
+                  💭 Mas e se hoje for o dia em que tudo muda?
+                </p>
+                <p className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">
+                  Porque com esse método, você não precisa esperar a motivação.<br/>
+                  <strong>Você só precisa dar o primeiro passo.</strong>
+                </p>
+                <p className="font-bold text-gray-800 text-sm sm:text-base md:text-lg">
+                  Adquira seu acesso<br/>
+                  E quebre as correntes de uma vez por todas.
+                </p>
               </div>
             </div>
           </div>
           
-          <p className="text-center text-xs sm:text-sm text-gray-400 mt-2 sm:mt-6 px-2 sm:px-4">
+          <p className="text-center text-xs sm:text-sm text-gray-500 mt-3 sm:mt-6 px-2 sm:px-4">
             Processamento seguro. Seus dados estão protegidos com criptografia SSL.
           </p>
         </div>
