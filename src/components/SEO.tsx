@@ -17,10 +17,10 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  title = 'WRLDS',
-  description = 'WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring.',
+  title = 'Quebrando Correntes',
+  description = 'Guia prático e motivador para vencer a procrastinação, desenvolver foco e construir uma rotina produtiva.',
   type = 'website',
-  name = 'WRLDS Technologies',
+  name = 'Quebrando correntes',
   imageUrl = '/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png',
   publishDate,
   modifiedDate,
