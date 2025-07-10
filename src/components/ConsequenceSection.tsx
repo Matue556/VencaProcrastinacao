@@ -171,31 +171,49 @@ const ConsequenceSection = () => {
               </motion.div>
               
               <div className="text-center sm:text-left">
-                <motion.p 
-                  className="text-orange-600 font-bold text-base sm:text-lg mb-2"
-                  animate={{ opacity: [0.8, 1, 0.8] }}
-                  transition={{ duration: 2.5, repeat: Infinity }}
+                <motion.div 
+                  className="mb-4"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.2, duration: 0.6 }}
                 >
-                  👉 Às vezes, a única coisa que falta é um método real para sair do lugar.
-                </motion.p>
-                <div className="flex items-center justify-center sm:justify-start space-x-3">
-                  <span className="text-gray-700 font-medium">
-                    Esse é o primeiro passo.
-                  </span>
+                  <p className="text-orange-600 font-bold text-base sm:text-lg mb-2">
+                    👉 Você não está comprando apenas um método.
+                  </p>
+                  <p className="text-orange-600 font-bold text-base sm:text-lg mb-2">
+                    Está comprando algo que pode transformar sua vida.
+                  </p>
+                  <p className="text-gray-700 font-semibold text-base sm:text-lg mb-3">
+                    E essa escolha só depende de você.
+                  </p>
+                </motion.div>
+                
+                <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-3">
                   <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
                   >
                     <Zap className="w-5 h-5 text-orange-500" />
                   </motion.div>
-                  <motion.span 
-                    className="text-orange-600 font-bold bg-orange-100 px-3 py-1 rounded-full"
-                    animate={{ backgroundColor: ["#fed7aa", "#ffedd5", "#fed7aa"] }}
-                    transition={{ duration: 3, repeat: Infinity }}
+                  <motion.div 
+                    className="text-center sm:text-left"
+                    animate={{ opacity: [0.8, 1, 0.8] }}
+                    transition={{ duration: 2.5, repeat: Infinity }}
                   >
-                    A escolha está nas suas mãos agora.
-                  </motion.span>
+                    <span className="text-orange-600 font-black text-lg sm:text-xl bg-gradient-to-r from-orange-100 to-red-100 px-4 py-2 rounded-full shadow-md">
+                      🔥 Só você pode quebrar essas correntes.
+                    </span>
+                  </motion.div>
                 </div>
+                
+                <motion.p 
+                  className="text-gray-700 font-semibold text-base sm:text-lg mt-3"
+                  initial={{ opacity: 0, y: 5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.4, duration: 0.6 }}
+                >
+                  Adquira agora e mude sua história.
+                </motion.p>
               </div>
             </div>
           </motion.div>

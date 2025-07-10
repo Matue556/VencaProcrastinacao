@@ -1,3 +1,4 @@
+
 import { ArrowRight, Download, MessageSquare, Zap, Users } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
@@ -212,7 +213,7 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              {/* NOVA SEÇÃO: Oferta Relâmpago - Duplicada e posicionada aqui */}
+              {/* OFERTA RELÂMPAGO - Posicionada após os bônus */}
               <motion.div 
                 className="w-full max-w-6xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4" 
                 variants={itemVariants}
@@ -301,17 +302,6 @@ const Hero = () => {
                     </Button>
                   </div>
                 </div>
-              </motion.div>
-              
-              {/* Botão CTA original - mantido igual */}
-              <motion.div className="flex justify-center px-2 sm:px-4" variants={itemVariants}>
-                <button 
-                  className="w-full sm:w-auto min-h-[60px] px-8 py-4 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:shadow-orange-300/20 flex items-center justify-center group text-lg font-bold max-w-xs sm:max-w-md transform hover:scale-105"
-                  onClick={scrollToOffer}
-                >
-                  Iniciar Transformação
-                  <Zap className="ml-2 w-4 h-4 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
-                </button>
               </motion.div>
             </motion.div>
           </div>
