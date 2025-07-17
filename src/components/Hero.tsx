@@ -213,94 +213,29 @@ const Hero = () => {
                 </div>
               </motion.div>
 
-              {/* OFERTA RELÂMPAGO - Posicionada após os bônus */}
+              {/* NOVO CTA APÓS OS BÔNUS */}
               <motion.div 
-                className="w-full max-w-6xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4" 
+                className="w-full max-w-4xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4" 
                 variants={itemVariants}
               >
-                <div className="bg-gradient-to-r from-red-900/90 to-red-800/90 backdrop-blur-sm border border-red-500/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl">
-                  <div className="text-center">
-                    <div className="inline-flex items-center space-x-2 bg-red-600 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full mb-3 sm:mb-4">
-                      <Zap className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse" />
-                      <span className="font-bold text-xs sm:text-sm">OFERTA RELÂMPAGO</span>
-                    </div>
-                    
-                    <h3 className="text-lg sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 text-white leading-tight">
-                      ❗ Para Quem Está Vendo Esta Página Agora
-                    </h3>
-                    
-                    <div className="bg-black/30 border border-orange-500/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
-                      <div className="flex items-center justify-center space-x-2 mb-2">
-                        <Users className="w-4 h-4 sm:w-5 sm:h-5 text-orange-400" />
-                        <p className="text-sm sm:text-base font-semibold text-orange-200">
-                          Mais de 2.000 pessoas já aplicaram esse método e destravaram suas vidas.
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
-                      <div className="flex items-start space-x-2 sm:space-x-3">
-                        <span className="text-lg sm:text-xl mt-0.5">💥</span>
-                        <div className="text-left">
-                          <h4 className="text-sm sm:text-lg font-bold text-white">
-                            Acesso Completo ao Guia Quebrando Correntes
-                          </h4>
-                          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-3 mt-1">
-                            <span className="text-gray-400 line-through text-sm sm:text-base">De R$197,00</span>
-                            <span className="text-orange-400 font-bold text-lg sm:text-xl">por apenas R$17,99</span>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-start space-x-2 sm:space-x-3">
-                        <span className="text-lg sm:text-xl mt-0.5">📘</span>
-                        <p className="text-white text-xs sm:text-base text-left leading-relaxed">
-                          Método oculto que está destravando a vida de quem já tentou de tudo
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start space-x-2 sm:space-x-3">
-                        <span className="text-lg sm:text-xl mt-0.5">🧠</span>  
-                        <p className="text-white text-xs sm:text-base text-left leading-relaxed">
-                          Técnicas científicas comprovadas contra a procrastinação
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-start space-x-2 sm:space-x-3">
-                        <span className="text-lg sm:text-xl mt-0.5">🎁</span>
-                        <p className="text-white text-xs sm:text-base text-left leading-relaxed">
-                          Inclui 3 bônus especiais que irão melhorar 100% seu foco (Wallpapers + Frases Mentais + Técnicas de Gestão de Tempo)
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-gradient-to-r from-orange-900/40 to-orange-800/40 border border-orange-500/40 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
-                      <p className="text-white text-sm sm:text-base font-semibold mb-2">
-                        🔓 Você não está comprando um eBook.
-                      </p>
-                      <p className="text-white text-sm sm:text-base font-semibold mb-2">
-                        Você está tomando uma decisão.
-                      </p>
-                      <p className="text-orange-300 text-sm sm:text-base font-bold">
-                        A de parar de viver no rascunho da sua própria vida.
-                      </p>
-                    </div>
-                    
-                    <p className="text-orange-200 text-sm sm:text-base font-semibold mb-4">
-                      👉 Clique abaixo para iniciar sua transformação:
+                <div className="text-center space-y-6 sm:space-y-8">
+                  {/* Texto emocional */}
+                  <div className="bg-gradient-to-r from-red-900/40 to-orange-900/40 border border-orange-500/40 rounded-xl p-4 sm:p-6">
+                    <p className="text-white text-lg sm:text-xl md:text-2xl font-bold leading-relaxed">
+                      Você já sofreu demais com a procrastinação. Não adie também a sua chance de mudar tudo agora.
                     </p>
-                    
-                    <Button
-                      onClick={handlePurchase}
-                      className="w-full py-3 sm:py-4 text-sm sm:text-lg bg-orange-600 hover:bg-orange-700 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[50px] sm:min-h-[60px] mb-4"
-                    >
-                      <span className="relative z-10 flex items-center justify-center">
-                        QUERO TRANSFORMAR MINHA VIDA COM 81% OFF
-                        <Zap className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-125 transition-transform" />
-                      </span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </Button>
                   </div>
+                  
+                  {/* Botão CTA */}
+                  <Button
+                    onClick={scrollToOffer}
+                    className="w-full py-4 sm:py-6 md:py-8 text-base sm:text-lg md:text-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-emerald-400"
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      Sim, Quero Assumir o Controle da Minha Vida! 💪
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </Button>
                 </div>
               </motion.div>
             </motion.div>
