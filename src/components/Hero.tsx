@@ -64,12 +64,12 @@ const Hero = () => {
               
               {/* Segunda frase - mantida igual */}
               <motion.h2 className="text-white text-xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-8 px-4 leading-tight" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
-                Quantas vezes você já prometeu que ia mudar… e nada aconteceu?
+                Conheça o método invisível que está quebrando o ciclo da procrastinação, sem motivação, sem força, só resultado.
               </motion.h2>
               
               {/* Terceira frase (subtítulo) - mantida igual */}
               <motion.p className="text-white text-base sm:text-xl md:text-2xl font-medium px-2 sm:px-4 leading-relaxed mb-8 sm:mb-12" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.9)' }}>
-                Descubra o método que já ajudou milhares de pessoas a saírem do ciclo da procrastinação e finalmente criarem uma rotina com foco, disciplina e resultados reais mesmo que já tenham tentado de tudo antes.
+                E se você pudesse ter foco mesmo nos dias ruins começando hoje?
               </motion.p>
               
               {/* Bloco de Diagnóstico - mantido igual */}
