@@ -64,7 +64,7 @@ const Hero = () => {
               
               {/* Segunda frase - mantida igual */}
               <motion.h2 className="text-white text-xl sm:text-3xl md:text-4xl font-bold text-center mb-4 sm:mb-8 px-4 leading-tight" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
-                Conheça o método invisível que está quebrando o ciclo da procrastinação, sem motivação, sem força, só resultado.
+                Se procrastinar já virou rotina, conheça este método silencioso que muda irá isso em poucos dias.
               </motion.h2>
               
               {/* Terceira frase (subtítulo) - mantida igual */}
