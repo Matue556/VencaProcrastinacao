@@ -4,8 +4,9 @@ import Hero from '@/components/Hero';
 import TransformationStory from '@/components/TransformationStory';
 import ObjectionsSection from '@/components/ObjectionsSection';
 import OfferCard from '@/components/ContactInfo';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import DiagnosisSection from '@/components/DiagnosisSection';
 import Features from '@/components/Features';
-import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
 import SEO from '@/components/SEO';
 
@@ -23,9 +24,10 @@ const Index = () => {
       <TransformationStory />
       <ObjectionsSection />
       <OfferCard />
+      <TestimonialsSection />
+      <DiagnosisSection />
       <Features />
       <WhyQuebrando />
-      <Testimonials />
       
     </PageLayout>
   );
