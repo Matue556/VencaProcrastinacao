@@ -3,11 +3,11 @@ import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
 import TransformationStory from '@/components/TransformationStory';
 import ObjectionsSection from '@/components/ObjectionsSection';
+import OfferCard from '@/components/ContactInfo';
 import Features from '@/components/Features';
 import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
 import SEO from '@/components/SEO';
-import PriceJustification from '@/components/PriceJustification';
 
 
 const Index = () => {
@@ -22,6 +22,7 @@ const Index = () => {
       <Hero />
       <TransformationStory />
       <ObjectionsSection />
+      <OfferCard />
       <Features />
       <WhyQuebrando />
       <Testimonials />
