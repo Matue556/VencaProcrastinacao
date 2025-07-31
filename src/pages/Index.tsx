@@ -1,6 +1,7 @@
 
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
+import TransformationStory from '@/components/TransformationStory';
 import Features from '@/components/Features';
 import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
@@ -18,6 +19,7 @@ const Index = () => {
         keywords={['procrastinação', 'produtividade', 'foco', 'disciplina', 'mindset', 'transformação pessoal', 'ebook']}
       />
       <Hero />
+      <TransformationStory />
       <Features />
       <WhyQuebrando />
       <Testimonials />
