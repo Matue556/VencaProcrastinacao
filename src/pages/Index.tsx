@@ -2,6 +2,7 @@
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
 import TransformationStory from '@/components/TransformationStory';
+import ObjectionsSection from '@/components/ObjectionsSection';
 import Features from '@/components/Features';
 import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
@@ -20,6 +21,7 @@ const Index = () => {
       />
       <Hero />
       <TransformationStory />
+      <ObjectionsSection />
       <Features />
       <WhyQuebrando />
       <Testimonials />
