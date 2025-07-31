@@ -6,7 +6,7 @@ import Testimonials from '@/components/Projects';
 import WhyQuebrando from '@/components/WhyWrlds';
 import SEO from '@/components/SEO';
 import PriceJustification from '@/components/PriceJustification';
-import ConsequenceSection from '@/components/ConsequenceSection';
+
 
 const Index = () => {
   return (
@@ -21,7 +21,7 @@ const Index = () => {
       <Features />
       <WhyQuebrando />
       <Testimonials />
-      <ConsequenceSection />
+      
     </PageLayout>
   );
 };
