@@ -128,6 +128,7 @@ const TransformationStory = () => {
               Testei muita coisa, eliminei o que sabia que não funcionava<br />
               <strong className="text-white">E criei um método que finalmente funcionou.<br />
               Funcionou para mim.<br />
+                
               E hoje já funcionou para centenas de pessoas que se viam assim como eu, estagnadas, perdidas e travadas pela procrastinação.</strong>
             </p>
           </motion.div>
