@@ -47,7 +47,7 @@ const TransformationStory = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Eu Cansei De Deixar Tudo Para Depois.. <span className="text-white">E O que Eu Fiz Mudou Tudo.</span>
+            Eu Cansei De Deixar Tudo Para Depois. <span className="text-white">E O que Eu Fiz Mudou Tudo.</span>
           </h2>
         </motion.div>
 
@@ -80,11 +80,11 @@ const TransformationStory = () => {
               <p className="text-lg md:text-xl text-gray-300">Estudos ignorados.</p>
               <p className="text-lg md:text-xl text-gray-300">Metas prolongadas.</p>
             </div>
-            <p className="text-lg md:text-xl text-primary font-semibold">
+            <p className="text-lg md:text-xl text-white font-semibold">
               A procrastinação me dominava.
             </p>
             <p className="text-lg md:text-xl font-semibold text-white">
-              E o pior? Eu sabia o que estava fazendo e as consequências disso.
+              E o pior? Eu sabia o que estava fazendo e sabia as consequências disso.
             </p>
           </motion.div>
 
@@ -92,8 +92,8 @@ const TransformationStory = () => {
 
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Até que um dia, depois de mais uma semana improdutiva,<br />
-              <strong className="text-white">eu me olhei no espelho… e me vi totalmente estagnado.</strong>
+              Até que um dia, depois de mais uma semana jogada no lixo,<br />
+              <strong className="text-white">eu me olhei no espelho, e me vi totalmente travado.</strong>
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Senti vergonha.<br />
@@ -116,7 +116,8 @@ const TransformationStory = () => {
               Estudei por longos períodos:
             </p>
             <div className="space-y-2 ml-4">
-              <p className="text-lg md:text-xl text-white">- Comportamento humano, comportamento mental</p>
+              <p className="text-lg md:text-xl text-white">- Comportamento humano</p>
+              <p className="text-lg md:text-xl text-white">- Comportamento mental</p>
               <p className="text-lg md:text-xl text-white">- hábitos e Disciplina</p>
               <p className="text-lg md:text-xl text-white">- Gestão de tempo</p>
             </div>
@@ -124,23 +125,23 @@ const TransformationStory = () => {
 
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Testei tudo. Eliminei o que sabia que não funcionava<br />
+              Testei muita coisa, eliminei o que sabia que não funcionava<br />
               <strong className="text-white">E criei um método que finalmente funcionou.<br />
-              Funcionou pra mim.<br />
-              E hoje, já funcionou para centenas de pessoas que se viam assim como eu, estagnadas, perdidas e paradas pela procrastinação.</strong>
+              Funcionou para mim.<br />
+              E hoje já funcionou para centenas de pessoas que se viam assim como eu, estagnadas, perdidas e travadas pela procrastinação.</strong>
             </p>
           </motion.div>
 
           <motion.div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" variants={itemVariants} />
 
           <motion.div variants={itemVariants} className="space-y-6">
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+            <p className="text-lg md:text-x3 text-gray-300 leading-relaxed">
               Todos nós temos um <strong className="text-white">potencial enorme dentro de nós.</strong>
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Se você quer realmente parar de prometer mil coisas <strong className="text-white">e começar a finalmente agir de verdade</strong>
             </p>
-            <p className="text-lg md:text-xl font-semibold text-white">
+            <p className="text-lg md:text-x4 font-semibold text-white">
               Você encontrou o lugar certo.
             </p>
             
@@ -156,7 +157,7 @@ const TransformationStory = () => {
             
             <p className="text-xl md:text-3xl font-bold text-center text-white">
               Só você tem a escolha de alcançar seu potencial máximo,<br />
-              essa pode finalmente ser a virada da sua vida.
+              e essa escolha pode finalmente ser a virada para sua vida.
             </p>
           </motion.div>
         </motion.div>
