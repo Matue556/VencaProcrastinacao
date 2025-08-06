@@ -56,7 +56,7 @@ const OfferCard = () => {
                   <span className="text-lg sm:text-2xl md:text-3xl text-gray-400 line-through">De R$197,00</span>
                   <span className="text-2xl sm:text-4xl md:text-6xl font-bold text-orange-400">R$17,99</span>
                 </div>
-                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado
+                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado                                                                                           
                   E se você não sentir diferença nos primeiros 7 dias, devolvemos seu dinheiro.⚡</p>
               </div>
 
