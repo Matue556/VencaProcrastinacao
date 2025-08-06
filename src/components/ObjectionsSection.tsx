@@ -33,23 +33,23 @@ const ObjectionsSection = () => {
   const objections = [
     {
       question: "E se eu comprar e travar de novo?",
-      answer: "Esse método foi criado justamente pra quem trava. É 100% prático, passo a passo, e pensado pra te destravar aos poucos — mesmo nos dias mais difíceis. O Desafio de 30 Dias é como um empurrão diário na direção certa."
+      answer: "Esse método foi criado justamente para quem está travado. É 100% prático, simples mas pensado para te destravar aos poucos mesmo nos dias mais difíceis. O Método é como um forte empurrão diário para a direção certa."
     },
     {
-      question: "Já tentei mil coisas... Por que essa seria diferente?",
-      answer: "Porque aqui você não depende de força de vontade. A metodologia mistura neurociência, mudança de hábitos e ação mínima diária. E ela já funcionou pra quem estava completamente desacreditado."
+      question: "Já tentei outros e nunca funcionou, por que essa seria diferente?",
+      answer: "Aqui você não depende de força de vontade ou motivação. O método mistura neurociência, mudança de simples hábitos  e ação mínima diária que realmente muda tudo. Além de já ter funcionado para quem estava completamente perdido e travado."
     },
     {
       question: "Minha rotina é uma loucura. E se eu não tiver tempo?",
-      answer: "Esse método cabe até nos dias mais corridos. As ações são curtas, objetivas, e feitas pra encaixar em qualquer brecha do seu dia. O foco não é quantidade — é consistência."
+      answer: "O método cabe até nos dias mais corridos. Ações curtas, objetivas, e feitas pra encaixar perfeitamente em seu dia para melhorar a gestão do seu tempo. O foco não é quantidade, é consistência."
     },
     {
-      question: "Agora não é um bom momento… tô sem grana.",
-      answer: "E quanto custa continuar parado? A procrastinação cobra caro: tempo perdido, metas adiadas, autoestima em queda. Isso aqui é um investimento mínimo com potencial de transformar tudo."
+      question: "Agora não é um bom momento, estou sem grana.",
+      answer: "Acreditar que 17,99 é grana para algo que pode mudar sua vida é díficil, mas o preço que se paga por não ter uma direção certa é ainda maior. A cobrança chega e a procrastinação cobra caro: tempo perdido, metas adiadas, autoestima lá em baixo. Esse é um investimento mínimo com potencial de transformar de verdade."
     },
     {
       question: "E se não funcionar pra mim?",
-      answer: "Você tem 7 dias pra testar sem risco. Se não sentir diferença, é só pedir o reembolso com 1 clique. Simples assim."
+      answer: "O método te entrega o que você precisa saber de forma simples, você precisa somente aplicar o que você aprendeu que os resultados começam a aparecer de uma forma que você nem imagina. Além do mais você terá 7 dias de garantia pra testar sem risco."
     }
   ];
 
@@ -74,7 +74,7 @@ const ObjectionsSection = () => {
           <span className="text-white">Algo ainda te segurando ❓</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Vamos eliminar, uma por uma, as dúvidas que mais travam quem está prestes a <strong className="text-white">mudar de vida</strong>.
+            Vamos eliminar as dúvidas que mais travam quem está definitivamente prestes a <strong className="text-white">mudar de vida</strong>.
           </p>
         </motion.div>
 
