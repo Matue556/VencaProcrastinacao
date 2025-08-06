@@ -22,12 +22,12 @@ const TransformativeBenefitsSection = () => {
   };
 
   const benefits = [
-    "Você para de se sabotar sem depender de motivação",
-    "Você aprende como fazer mesmo cansado, sem tempo e sem saco",
+    "Você para de se sabotar e fica sem depender de motivação",
+    "Você aprende a fazer mesmo cansado, sem tempo e sem vontade",
     "Você quebra qualquer tarefa em passos tão simples que é impossível travar",
     "Você começa a aplicar no mesmo dia, sem enrolação",
     "Você cria consistência com esforço mínimo",
-    "Você recupera o controle da sua vida"
+    "Você finalmente recupera o controle da sua vida."
   ];
 
   return (
@@ -57,7 +57,7 @@ const TransformativeBenefitsSection = () => {
             variants={itemVariants}
             className="text-white text-3xl md:text-5xl lg:text-6xl font-black mb-16 leading-tight"
           >
-            💥 O Que Muda Quando Você Para de Procrastinar
+              O Que Muda Quando Você Para de Procrastinar
           </motion.h2>
 
           {/* Benefits Grid */}
