@@ -47,7 +47,7 @@ const TransformationStory = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Eu Cansei de Me Sabotar. <span className="text-primary">E Isso Mudou Tudo.</span>
+            Eu Cansei de Me Sabotar. <span className="text-white">E Isso Mudou Tudo.</span>
           </h2>
         </motion.div>
 
