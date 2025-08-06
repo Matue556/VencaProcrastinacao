@@ -56,8 +56,7 @@ const OfferCard = () => {
                   <span className="text-lg sm:text-2xl md:text-3xl text-gray-400 line-through">De R$197,00</span>
                   <span className="text-2xl sm:text-4xl md:text-6xl font-bold text-orange-400">R$17,99</span>
                 </div>
-                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado                                                                                           
-                  E se você não sentir diferença nos primeiros 7 dias, devolvemos seu dinheiro.⚡</p>
+                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF somente no dia de hoje. E se você não sentir diferença nos primeiros 7 dias, devolvemos seu dinheiro.⚡</p>
               </div>
 
               {/* Lista de benefícios */}
@@ -142,7 +141,7 @@ const OfferCard = () => {
                 className="w-full py-3 sm:py-6 md:py-8 text-sm sm:text-lg md:text-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-lg shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[48px] sm:min-h-[70px] border-2 border-orange-400 animate-pulse-slow"
               >
                 <span className="relative z-10 flex items-center justify-center">
-                  👉 Sim, Quero Iniciar Minha Transformação Agora por 81% OFF
+                  ✅ Sim, Estou Pronto para Quebrar Minhas Correntes!
                   <Unlock className="ml-2 sm:ml-3 w-4 h-4 sm:w-6 sm:h-6 group-hover:scale-125 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
