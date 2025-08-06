@@ -47,7 +47,7 @@ const TransformationStory = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Eu Cansei de Me Sabotar. <span className="text-white">E Isso Mudou Tudo.</span>
+            Eu Cansei De Deixar Tudo Para Depois.. <span className="text-white">E O que Eu Fiz Mudou Tudo.</span>
           </h2>
         </motion.div>
 
@@ -62,29 +62,29 @@ const TransformationStory = () => {
           {/* Section 1: The Beginning */}
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              O despertador tocava, e eu apertava <strong className="text-white">"só mais cinco minutinhos"</strong>.
+              O despertador tocava, e eu apertava na mente o botão <strong className="text-white">"só mais cinco minutinhos"</strong>.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Prometia que ia começar na segunda.<br />
+              Prometia que ia começar amanhã, na segunda.<br />
               <strong className="text-white">Segunda virava terça.<br />
-              Terça virava mês que vem.</strong>
+              Terça virava mês que vem e assim ia.</strong>
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Eu via meus planos escorrendo pelos dedos:
+              Eu via meus planos indo cada vez mais por água abaixo
             </p>
             <div className="space-y-2 ml-4">
               <p className="text-lg md:text-xl text-gray-300">Treinos adiados.</p>
               <p className="text-lg md:text-xl text-gray-300">Estudos ignorados.</p>
-              <p className="text-lg md:text-xl text-gray-300">Metas postergadas.</p>
+              <p className="text-lg md:text-xl text-gray-300">Metas prolongadas.</p>
             </div>
             <p className="text-lg md:text-xl text-primary font-semibold">
               A procrastinação me dominava.
             </p>
             <p className="text-lg md:text-xl font-semibold text-white">
-              E o pior? Eu sabia o preço que estava pagando.
+              E o pior? Eu sabia o que estava fazendo e as consequências disso.
             </p>
           </motion.div>
 
@@ -93,12 +93,12 @@ const TransformationStory = () => {
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Até que um dia, depois de mais uma semana improdutiva,<br />
-              <strong className="text-white">eu me olhei no espelho… e me vi estagnado.</strong>
+              <strong className="text-white">eu me olhei no espelho… e me vi totalmente estagnado.</strong>
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Senti vergonha.<br />
               <strong className="text-white">Não pelos erros.<br />
-              Mas por saber que eu podia mais —<br />
+              Mas por saber que eu podia mais, <br />
               e ainda assim não conseguia sair do lugar.</strong>
             </p>
           </motion.div>
@@ -110,24 +110,24 @@ const TransformationStory = () => {
               Foi aí que tomei uma decisão:
             </p>
             <p className="text-lg md:text-xl text-white font-semibold">
-              Eu ia entender o que fazia meu cérebro me sabotar.
+              Eu queria entender o que fazia meu cérebro me sabotar tão fácil.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Estudei obsessivamente:
+              Estudei por longos períodos:
             </p>
             <div className="space-y-2 ml-4">
-              <p className="text-lg md:text-xl text-white">- Comportamento humano</p>
-              <p className="text-lg md:text-xl text-white">- Foco e hábitos</p>
-              <p className="text-lg md:text-xl text-white">- Mentalidade realista</p>
+              <p className="text-lg md:text-xl text-white">- Comportamento humano, comportamento mental</p>
+              <p className="text-lg md:text-xl text-white">- hábitos e Disciplina</p>
+              <p className="text-lg md:text-xl text-white">- Gestão de tempo</p>
             </div>
           </motion.div>
 
           <motion.div variants={itemVariants} className="space-y-4">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Testei tudo. Eliminei o que era papo furado.<br />
-              <strong className="text-white">E criei um método que funcionou.<br />
+              Testei tudo. Eliminei o que sabia que não funcionava<br />
+              <strong className="text-white">E criei um método que finalmente funcionou.<br />
               Funcionou pra mim.<br />
-              E hoje, já funcionou pra centenas de pessoas.</strong>
+              E hoje, já funcionou para centenas de pessoas que se viam assim como eu, estagnadas, perdidas e paradas pela procrastinação.</strong>
             </p>
           </motion.div>
 
@@ -135,28 +135,28 @@ const TransformationStory = () => {
 
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Se você sente que tem um <strong className="text-white">potencial enorme preso dentro de você...</strong>
+              Todos nós temos um <strong className="text-white">potencial enorme dentro de nós.</strong>
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              Se está cansado de se prometer mil coisas — <strong className="text-white">e nunca cumprir...</strong>
+              Se você quer realmente parar de prometer mil coisas <strong className="text-white">e começar a finalmente agir de verdade</strong>
             </p>
             <p className="text-lg md:text-xl font-semibold text-white">
-              Você está no lugar certo.
+              Você encontrou o lugar certo.
             </p>
             
             <div className="p-6 md:p-8 bg-primary/10 border border-primary/20 rounded-2xl">
               <p className="text-lg md:text-xl text-white font-semibold leading-relaxed">
-                O Quebrando Correntes é pra quem vive nesse ciclo vicioso de adiar e se culpar.
+                O Método Quebrando Correntes foi desenvolvido para quem vive nesse ciclo vicioso de adiamento e culpa.
               </p>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed mt-4">
-                É pra quem sabe que pode mais <br />
-                <strong className="text-white">mas ainda não descobriu como destravar.</strong>
+                Feito para quem quer muito mais, não apenas produtividade <br />
+                <strong className="text-white">mas sim destravar totalmente o potencial que você sabe que tem.</strong>
               </p>
             </div>
             
             <p className="text-xl md:text-3xl font-bold text-center text-white">
-              Se você permitir,<br />
-              essa pode ser a virada da sua vida.
+              Só você tem a escolha de alcançar seu potencial máximo,<br />
+              essa pode finalmente ser a virada da sua vida.
             </p>
           </motion.div>
         </motion.div>
