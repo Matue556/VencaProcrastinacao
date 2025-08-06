@@ -7,9 +7,11 @@ import OfferCard from '@/components/ContactInfo';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import TransformativeBenefitsSection from '@/components/TransformativeBenefitsSection';
 import DiagnosisSection from '@/components/DiagnosisSection';
+import GuaranteeSection from '@/components/GuaranteeSection';
 import Features from '@/components/Features';
 import WhyQuebrando from '@/components/WhyWrlds';
 import FAQSection from '@/components/FAQSection';
+import FinalCTASection from '@/components/FinalCTASection';
 import SEO from '@/components/SEO';
 
 
@@ -28,7 +30,10 @@ const Index = () => {
       <OfferCard />
       <TestimonialsSection />
       <TransformativeBenefitsSection />
+      <DiagnosisSection />
+      <GuaranteeSection />
       <FAQSection />
+      <FinalCTASection />
       <Features />
       <WhyQuebrando />
       

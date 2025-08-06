@@ -26,7 +26,6 @@ const TransformativeBenefitsSection = () => {
     "Você aprende como fazer mesmo cansado, sem tempo e sem saco",
     "Você quebra qualquer tarefa em passos tão simples que é impossível travar",
     "Você começa a aplicar no mesmo dia, sem enrolação",
-    "Você vê resultado antes de perder o ritmo",
     "Você cria consistência com esforço mínimo",
     "Você recupera o controle da sua vida"
   ];

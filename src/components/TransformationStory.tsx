@@ -30,11 +30,11 @@ const TransformationStory = () => {
   };
 
   return (
-    <section className="section-container bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-      {/* Subtle background elements */}
+    <section className="section-container bg-[#121212] relative overflow-hidden">
+      {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 right-10 w-40 h-40 bg-primary rounded-full blur-3xl"></div>
+        <div className="absolute top-32 left-1/4 w-24 h-24 bg-primary rounded-full blur-2xl"></div>
+        <div className="absolute bottom-32 right-1/4 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-4xl mx-auto relative z-10">
@@ -46,171 +46,118 @@ const TransformationStory = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Eu Cansei de Me Sabotar.
-            <br />
-            <span className="text-primary">E Isso Mudou Tudo.</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            Eu Cansei de Me Sabotar. <span className="text-primary">E Isso Mudou Tudo.</span>
           </h2>
         </motion.div>
 
-        {/* Content blocks */}
+        {/* Story Content */}
         <motion.div 
-          className="space-y-12 md:space-y-16"
+          className="space-y-8 md:space-y-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {/* Block 1 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-6">
-              O despertador tocava, e eu apertava <strong>"só mais cinco minutinhos"</strong>.
+          {/* Section 1: The Beginning */}
+          <motion.div variants={itemVariants} className="space-y-4">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              O despertador tocava, e eu apertava <strong className="text-white">"só mais cinco minutinhos"</strong>.
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Prometia que ia começar na segunda.<br />
-              Segunda virava terça.<br />
-              Terça virava <strong>mês que vem</strong>.
+              <strong className="text-white">Segunda virava terça.<br />
+              Terça virava mês que vem.</strong>
             </p>
-            <p className="text-lg md:text-xl text-foreground mb-6">
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="space-y-4">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Eu via meus planos escorrendo pelos dedos:
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg md:text-xl">
-              <div className="flex items-center gap-3">
-                <Dumbbell className="text-primary" size={24} />
-                <span>Treinos adiados.</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <BookOpen className="text-primary" size={24} />
-                <span>Estudos ignorados.</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Target className="text-primary" size={24} />
-                <span>Metas postergadas.</span>
-              </div>
+            <div className="space-y-2 ml-4">
+              <p className="text-lg md:text-xl text-gray-300">Treinos adiados.</p>
+              <p className="text-lg md:text-xl text-gray-300">Estudos ignorados.</p>
+              <p className="text-lg md:text-xl text-gray-300">Metas postergadas.</p>
             </div>
-          </motion.div>
-
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
-
-          {/* Block 2 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-6">
-              A <strong>procrastinação</strong> me dominava.<br />
-              E o pior? Eu <strong>sabia o preço</strong> que estava pagando.
+            <p className="text-lg md:text-xl text-primary font-semibold">
+              A procrastinação me dominava.
+            </p>
+            <p className="text-lg md:text-xl font-semibold text-white">
+              E o pior? Eu sabia o preço que estava pagando.
             </p>
           </motion.div>
 
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
+          <motion.div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" variants={itemVariants} />
 
-          {/* Block 3 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+          <motion.div variants={itemVariants} className="space-y-4">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Até que um dia, depois de mais uma semana improdutiva,<br />
-              eu me olhei no espelho… e me vi <strong>estagnado</strong>.
+              <strong className="text-white">eu me olhei no espelho… e me vi estagnado.</strong>
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Senti <strong>vergonha</strong>.<br />
-              Não pelos erros.<br />
-              Mas por saber que eu <strong>podia mais</strong> —<br />
-              e ainda assim <strong>não conseguia sair do lugar</strong>.
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Senti vergonha.<br />
+              <strong className="text-white">Não pelos erros.<br />
+              Mas por saber que eu podia mais —<br />
+              e ainda assim não conseguia sair do lugar.</strong>
             </p>
           </motion.div>
 
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
+          <motion.div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" variants={itemVariants} />
 
-          {/* Block 4 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-8">
+          <motion.div variants={itemVariants} className="space-y-4">
+            <p className="text-lg md:text-xl font-semibold text-white">
               Foi aí que tomei uma decisão:
             </p>
-            <p className="text-lg md:text-xl text-primary font-semibold mb-8">
+            <p className="text-lg md:text-xl text-primary font-semibold">
               Eu ia entender o que fazia meu cérebro me sabotar.
             </p>
-            <p className="text-lg md:text-xl text-foreground mb-6">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
               Estudei obsessivamente:
             </p>
-            <div className="flex flex-col gap-4 text-lg md:text-xl">
-              <div className="flex items-center justify-center gap-3">
-                <Brain className="text-primary" size={24} />
-                <span>Comportamento humano</span>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <Zap className="text-primary" size={24} />
-                <span>Foco e hábitos</span>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <HeartHandshake className="text-primary" size={24} />
-                <span>Mentalidade realista</span>
-              </div>
+            <div className="space-y-2 ml-4">
+              <p className="text-lg md:text-xl text-white">- Comportamento humano</p>
+              <p className="text-lg md:text-xl text-white">- Foco e hábitos</p>
+              <p className="text-lg md:text-xl text-white">- Mentalidade realista</p>
             </div>
           </motion.div>
 
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
-
-          {/* Block 5 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-              Testei tudo. Eliminei o que era <strong>papo furado</strong>.<br />
-              E criei um método que <strong>funcionou</strong>.<br />
+          <motion.div variants={itemVariants} className="space-y-4">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Testei tudo. Eliminei o que era papo furado.<br />
+              <strong className="text-white">E criei um método que funcionou.<br />
               Funcionou pra mim.<br />
-              E hoje, já funcionou pra <strong>centenas de pessoas</strong>.
+              E hoje, já funcionou pra centenas de pessoas.</strong>
             </p>
           </motion.div>
 
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
+          <motion.div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" variants={itemVariants} />
 
-          {/* Block 6 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-              Se você sente que tem um <strong>potencial enorme preso dentro de você</strong>...
+          <motion.div variants={itemVariants} className="space-y-6">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Se você sente que tem um <strong className="text-white">potencial enorme preso dentro de você...</strong>
             </p>
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-              Se está <strong>cansado de se prometer mil coisas — e nunca cumprir</strong>...
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Se está cansado de se prometer mil coisas — <strong className="text-white">e nunca cumprir...</strong>
             </p>
-            <p className="text-xl md:text-2xl text-primary font-semibold">
-              Você está no <strong>lugar certo</strong>.
+            <p className="text-lg md:text-xl font-semibold text-white">
+              Você está no lugar certo.
             </p>
-          </motion.div>
-
-          {/* Separator */}
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="w-32 h-px bg-border"></div>
-          </motion.div>
-
-          {/* Block 7 */}
-          <motion.div variants={itemVariants} className="text-center max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-6">
-              <strong>O Quebrando Correntes</strong> é pra quem vive nesse ciclo vicioso de adiar e se culpar.
-            </p>
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
-              É pra quem sabe que <strong>pode mais</strong> —<br />
-              mas ainda não descobriu <strong>como destravar</strong>.
-            </p>
-          </motion.div>
-
-          {/* Highlighted final message */}
-          <motion.div variants={itemVariants} className="text-center max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 border border-primary/20 shadow-lg">
-              <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                Se você permitir,<br />
-                essa pode ser a <strong className="text-primary">virada da sua vida</strong>.
+            
+            <div className="p-6 md:p-8 bg-primary/10 border border-primary/20 rounded-2xl">
+              <p className="text-lg md:text-xl text-white font-semibold leading-relaxed">
+                O Quebrando Correntes é pra quem vive nesse ciclo vicioso de adiar e se culpar.
+              </p>
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mt-4">
+                É pra quem sabe que pode mais —<br />
+                <strong className="text-primary">mas ainda não descobriu como destravar.</strong>
               </p>
             </div>
+            
+            <p className="text-xl md:text-2xl font-bold text-center text-primary">
+              Se você permitir,<br />
+              essa pode ser a virada da sua vida.
+            </p>
           </motion.div>
         </motion.div>
       </div>
