@@ -109,7 +109,7 @@ const TransformationStory = () => {
             <p className="text-lg md:text-xl font-semibold text-white">
               Foi aí que tomei uma decisão:
             </p>
-            <p className="text-lg md:text-xl text-primary font-semibold">
+            <p className="text-lg md:text-xl text-white font-semibold">
               Eu ia entender o que fazia meu cérebro me sabotar.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
@@ -149,12 +149,12 @@ const TransformationStory = () => {
                 O Quebrando Correntes é pra quem vive nesse ciclo vicioso de adiar e se culpar.
               </p>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed mt-4">
-                É pra quem sabe que pode mais —<br />
-                <strong className="text-primary">mas ainda não descobriu como destravar.</strong>
+                É pra quem sabe que pode mais <br />
+                <strong className="text-white">mas ainda não descobriu como destravar.</strong>
               </p>
             </div>
             
-            <p className="text-xl md:text-2xl font-bold text-center text-primary">
+            <p className="text-xl md:text-3xl font-bold text-center text-white">
               Se você permitir,<br />
               essa pode ser a virada da sua vida.
             </p>
