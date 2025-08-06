@@ -71,7 +71,7 @@ const ObjectionsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            ❓ <span className="text-primary">Algo ainda te segurando?</span>
+            ❓ <span className="text-white">Algo ainda te segurando?</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Vamos eliminar, uma por uma, as dúvidas que mais travam quem está prestes a <strong className="text-white">mudar de vida</strong>.
