@@ -23,7 +23,7 @@ const OfferCard = () => {
             🎯 Sua Chance de Quebrar as Correntes Que Te Prendem
           </div>
           <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-6 text-white leading-tight max-w-3xl mx-auto">
-            Você está a um clique da decisão que pode mudar sua rotina, seus projetos e seu futuro
+            Você está a um clique de silenciar a voz da procrastinação, e finalmente assumir o controle da sua vida.
           </h2>
         </div>
 
@@ -36,7 +36,7 @@ const OfferCard = () => {
               {/* Texto persuasivo inicial */}
               <div className="text-center space-y-3 sm:space-y-4">
                 <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
-                  Mais de <strong className="text-orange-400">2000 pessoas</strong> estão agora mesmo executando projetos, estudando com foco ou acordando com clareza de propósito.
+                  Mais de <strong className="text-orange-400">2000 pessoas</strong> já saíram do ciclo de procrastinação com este método.
                 </p>
                 <p className="text-base sm:text-lg md:text-xl font-semibold text-white">
                   A única diferença entre elas e você?
@@ -56,7 +56,8 @@ const OfferCard = () => {
                   <span className="text-lg sm:text-2xl md:text-3xl text-gray-400 line-through">De R$197,00</span>
                   <span className="text-2xl sm:text-4xl md:text-6xl font-bold text-orange-400">R$17,99</span>
                 </div>
-                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado ⚡</p>
+                <p className="text-orange-300 font-semibold text-sm sm:text-base">⚡ 81% OFF por tempo limitado
+                  E se você não sentir diferença nos primeiros 7 dias, devolvemos seu dinheiro.⚡</p>
               </div>
 
               {/* Lista de benefícios */}
