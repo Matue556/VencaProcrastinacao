@@ -5,6 +5,7 @@ import TransformationStory from '@/components/TransformationStory';
 import ObjectionsSection from '@/components/ObjectionsSection';
 import OfferCard from '@/components/ContactInfo';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import TransformativeBenefitsSection from '@/components/TransformativeBenefitsSection';
 import DiagnosisSection from '@/components/DiagnosisSection';
 import Features from '@/components/Features';
 import WhyQuebrando from '@/components/WhyWrlds';
@@ -25,6 +26,7 @@ const Index = () => {
       <ObjectionsSection />
       <OfferCard />
       <TestimonialsSection />
+      <TransformativeBenefitsSection />
       <DiagnosisSection />
       <Features />
       <WhyQuebrando />

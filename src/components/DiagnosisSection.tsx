@@ -34,76 +34,6 @@ const DiagnosisSection = () => {
           variants={containerVariants}
           className="w-full max-w-6xl mx-auto"
         >
-          {/* Bloco de Diagnóstico */}
-          <motion.div 
-            className="w-full mb-8 px-2 sm:px-4" 
-            variants={itemVariants}
-          >
-            <div className="bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-orange-500/20 p-4 sm:p-8 shadow-2xl">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
-                {/* Lado esquerdo - Diagnóstico */}
-                <div className="text-left">
-                  <h3 className="text-orange-500 text-lg sm:text-2xl font-bold mb-4 sm:mb-6">
-                    Isso soa familiar para você?
-                  </h3>
-                  
-                  <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-                    <div className="flex items-start space-x-3">
-                      <span className="text-red-400 text-lg sm:text-xl mt-1">❌</span>
-                      <p className="text-white text-sm sm:text-base leading-relaxed">
-                        Você começa animado, mas logo perde o foco?
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <span className="text-red-400 text-lg sm:text-xl mt-1">❌</span>
-                      <p className="text-white text-sm sm:text-base leading-relaxed">
-                        Vive adiando tarefas e dizendo "depois eu faço"?
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <span className="text-red-400 text-lg sm:text-xl mt-1">❌</span>
-                      <p className="text-white text-sm sm:text-base leading-relaxed">
-                        Já tentou vários métodos, mas nada realmente funcionou?
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <span className="text-red-400 text-lg sm:text-xl mt-1">❌</span>
-                      <p className="text-white text-sm sm:text-base leading-relaxed">
-                        Sente que sabe o que tem que fazer, mas não consegue agir?
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="border-l-4 border-orange-500 pl-4 sm:pl-6">
-                    <div className="flex items-start space-x-2 sm:space-x-3">
-                      <span className="text-orange-500 text-lg sm:text-xl mt-1">👉</span>
-                      <p className="text-white text-sm sm:text-lg font-medium leading-relaxed">
-                        Então o método <span className="text-orange-500 font-bold">Quebrando Correntes</span> foi feito justamente para você.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Lado direito - Mockup do eBook */}
-                <div className="flex justify-center lg:justify-end">
-                  <div className="relative group">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                    <div className="relative">
-                      <img 
-                        src="https://i.imgur.com/XIe91yv.png" 
-                        alt="Quebrando Correntes - Capa do eBook" 
-                        className="w-48 sm:w-64 lg:w-72 h-auto rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-orange-500/10 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
           
           {/* Seção de Bônus */}
           <motion.div 
@@ -175,19 +105,6 @@ const DiagnosisSection = () => {
             </div>
           </motion.div>
 
-          {/* Texto emocional final */}
-          <motion.div 
-            className="w-full max-w-4xl mx-auto px-2 sm:px-4" 
-            variants={itemVariants}
-          >
-            <div className="text-center">
-              <div className="bg-gradient-to-r from-red-900/40 to-orange-900/40 border border-orange-500/40 rounded-xl p-4 sm:p-6">
-                <p className="text-white text-lg sm:text-xl md:text-2xl font-bold leading-relaxed">
-                  Você já sofreu demais com a procrastinação. Não adie também a sua chance de mudar tudo agora.
-                </p>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
