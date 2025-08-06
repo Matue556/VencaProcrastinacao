@@ -9,6 +9,7 @@ import TransformativeBenefitsSection from '@/components/TransformativeBenefitsSe
 import DiagnosisSection from '@/components/DiagnosisSection';
 import Features from '@/components/Features';
 import WhyQuebrando from '@/components/WhyWrlds';
+import FAQSection from '@/components/FAQSection';
 import SEO from '@/components/SEO';
 
 
@@ -27,7 +28,7 @@ const Index = () => {
       <OfferCard />
       <TestimonialsSection />
       <TransformativeBenefitsSection />
-      <DiagnosisSection />
+      <FAQSection />
       <Features />
       <WhyQuebrando />
       
