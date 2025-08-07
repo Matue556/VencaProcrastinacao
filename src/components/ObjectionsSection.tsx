@@ -33,11 +33,11 @@ const ObjectionsSection = () => {
   const objections = [
     {
       question: "E se eu comprar e travar de novo?",
-      answer: "Esse método foi criado justamente para quem está travado. É 100% prático, simples mas pensado para te destravar aos poucos mesmo nos dias mais difíceis. O Método é como um forte empurrão diário para a direção certa."
+      answer: "Esse método foi criado justamente para quem está travado. É 100% prático, simples, mas pensado para te destravar aos poucos e mesmo nos dias mais difíceis. O Método é como um forte empurrão diário para a direção certa."
     },
     {
-      question: "Já tentei outros e nunca funcionou, por que essa seria diferente?",
-      answer: "Aqui você não depende de força de vontade ou motivação. O método mistura neurociência, mudança de simples hábitos  e ação mínima diária que realmente muda tudo. Além de já ter funcionado para quem estava completamente perdido e travado."
+      question: "Já tentei outros e nunca funcionou, por que esse seria diferente?",
+      answer: "Aqui você não depende de força de vontade ou motivação. O método mistura neurociência, mudanças de simples hábitos  e ação mínima diária que realmente muda tudo. Além de já ter funcionado para quem estava completamente perdido e travado."
     },
     {
       question: "Minha rotina é uma loucura. E se eu não tiver tempo?",
@@ -127,7 +127,7 @@ const ObjectionsSection = () => {
         >
           <Button 
             size="lg" 
-            className="text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="text-lg md:text-x3 px-10 md:px-14 py-4 md:py-8 font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             🚀 Começar agora
           </Button>
