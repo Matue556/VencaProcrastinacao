@@ -127,7 +127,7 @@ const ObjectionsSection = () => {
         >
           <Button 
             size="lg" 
-            className="text-lg md:text-x3 px-10 md:px-14 py-4 md:py-8 font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="text-lg md:text-x4 px-12 md:px-16 py-6 md:py-10 font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             🚀 Começar agora
           </Button>
