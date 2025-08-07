@@ -20,10 +20,10 @@ const OfferCard = () => {
 
         <div className="text-center mb-4 sm:mb-8 md:mb-12">
           <div className="inline-block mb-2 sm:mb-4 px-3 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full text-sm sm:text-base font-bold shadow-lg">
-            🎯 Sua Chance de Quebrar as Correntes Que Te Prendem
+            🎯 Chegou a hora de acabar com a procrastinação de uma vez por todas!
           </div>
           <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-6 text-white leading-tight max-w-3xl mx-auto">
-            Você está a um clique de silenciar a voz da procrastinação, e finalmente assumir o controle da sua vida.
+            Você está a um clique de silenciar a voz do adiamento e finalmente assumir o controle da sua vida.
           </h2>
         </div>
 
@@ -36,17 +36,17 @@ const OfferCard = () => {
               {/* Texto persuasivo inicial */}
               <div className="text-center space-y-3 sm:space-y-4">
                 <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
-                  Mais de <strong className="text-orange-400">2000 pessoas</strong> já saíram do ciclo de procrastinação com este método.
+                  Mais de <strong className="text-orange-400">+2000 pessoas</strong> já saíram do ciclo de procrastinação com este método.
                 </p>
                 <p className="text-base sm:text-lg md:text-xl font-semibold text-white">
-                  A única diferença entre elas e você?
+                  Sabe a diferença entre elas e você?
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-200 bg-orange-900/30 p-3 sm:p-4 rounded-lg border-l-4 border-orange-500">
                   👉 <strong>Elas decidiram agir</strong>, mesmo com medo, mesmo sem tempo, mesmo sem motivação.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
-                  Você está levando muito mais do que um simples método.<br/>
-                  Está levando um método <strong className="text-orange-400">real, validado e direto</strong>, que finalmente funciona no mundo real. <em>sem precisar acordar às 5h da manhanha ou virar uma máquina.</em>
+                  Por causa de um propósito maior<br/>
+                  Um método<strong className="text-orange-400">real, validado e direto</strong>, que realmente funciona no mundo real. <em>.</em>
                 </p>
               </div>
 
@@ -70,14 +70,14 @@ const OfferCard = () => {
                     <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-white text-sm sm:text-base">📘 Guia Completo Quebrando Correntes</h4>
-                      <p className="text-gray-300 text-xs sm:text-sm">(baseado em neurociência e comportamento real)</p>
+                      <p className="text-gray-300 text-xs sm:text-sm">(baseado em neurociência e comportamento mental)</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white text-sm sm:text-base">🧠 Sistema simples mas poderoso</h4>
+                      <h4 className="font-semibold text-white text-sm sm:text-base">🧠 Sistema simples, porém poderoso</h4>
                       <p className="text-gray-300 text-xs sm:text-sm">Para eliminar a procrastinação em poucos dias</p>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ const OfferCard = () => {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-4 h-4 sm:w-6 sm:h-6 text-green-400 mt-0.5 sm:mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-white text-sm sm:text-base">🎯 Técnicas e ferramentas que funcionam para todos</h4>
+                      <h4 className="font-semibold text-white text-sm sm:text-base">🎯 Técnicas e ferramentas de gestão de tempo que funcionam para todos</h4>
                     </div>
                   </div>
                 </div>
@@ -149,16 +149,6 @@ const OfferCard = () => {
 
               {/* Bloco final de persuasão emocional */}
               <div className="bg-gradient-to-r from-orange-900/30 to-gray-800/30 p-4 sm:p-6 md:p-8 rounded-lg border-l-4 border-orange-500 text-center space-y-3 sm:space-y-4">
-                <h4 className="font-bold text-white text-sm sm:text-base md:text-lg">E se você não fizer nada agora?</h4>
-                <p className="text-gray-200 text-xs sm:text-sm md:text-base leading-relaxed">
-                  A rotina segue igual. Os planos continuam empilhados.<br/>
-                  A frustração de saber o que fazer — e não fazer — vai se repetir.
-                </p>
-                <p className="font-semibold text-orange-400 text-sm sm:text-base md:text-lg">
-                  💭 Mas e se hoje for o dia em que tudo muda?
-                </p>
-                <p className="text-gray-200 text-xs sm:text-sm md:text-base leading-relaxed">
-                  Porque com esse método, você não precisa esperar a motivação.<br/>
                   <strong>Você só precisa dar o primeiro passo.</strong>
                 </p>
                 <p className="font-bold text-white text-sm sm:text-base md:text-lg">
