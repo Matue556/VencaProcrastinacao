@@ -117,7 +117,7 @@ const ObjectionsSection = () => {
           ))}
         </motion.div>
 
-        {/* CTA */}
+        {/* Texto motivacional final */}
         <motion.div 
           className="text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -125,14 +125,8 @@ const ObjectionsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <Button 
-            size="lg" 
-            className="text-lg md:text-x4 px-12 md:px-16 py-6 md:py-10 font-semibold bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-          >
-            🚀 Começar agora
-          </Button>
-          <p className="text-sm text-gray-400 mt-4">
-            Sua transformação começa hoje
+          <p className="text-lg md:text-xl text-white font-semibold">
+            Agora você sabe que não há mais desculpas. É hora de agir.
           </p>
         </motion.div>
       </div>

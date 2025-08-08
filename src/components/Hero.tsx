@@ -79,13 +79,16 @@ const Hero = () => {
               >
                 <Button
                   onClick={scrollToOffer}
-                  className="w-full py-4 sm:py-6 md:py-8 text-base sm:text-lg md:text-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-emerald-400"
+                  className="w-full py-4 sm:py-6 md:py-8 text-base sm:text-lg md:text-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-emerald-400 transform hover:scale-105"
                 >
                   <span className="relative z-10 flex items-center justify-center">
-                    Sim, Quero Assumir o Controle da Minha Vida! 💪
+                    🚀 Começar agora
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Button>
+                <p className="text-sm sm:text-base text-white/90 mt-4 font-medium">
+                  Sua transformação começa hoje
+                </p>
               </motion.div>
             </motion.div>
           </div>
