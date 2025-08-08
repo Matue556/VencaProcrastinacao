@@ -1,15 +1,15 @@
 
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
+import ThreePillarsSection from '@/components/ThreePillarsSection';
 import TransformationStory from '@/components/TransformationStory';
 import ObjectionsSection from '@/components/ObjectionsSection';
 import OfferCard from '@/components/ContactInfo';
+import MethodApplicationSection from '@/components/MethodApplicationSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import TransformativeBenefitsSection from '@/components/TransformativeBenefitsSection';
 import DiagnosisSection from '@/components/DiagnosisSection';
 import GuaranteeSection from '@/components/GuaranteeSection';
-import Features from '@/components/Features';
-import WhyQuebrando from '@/components/WhyWrlds';
 import FAQSection from '@/components/FAQSection';
 import FinalCTASection from '@/components/FinalCTASection';
 import SEO from '@/components/SEO';
@@ -25,17 +25,17 @@ const Index = () => {
         keywords={['procrastinação', 'produtividade', 'foco', 'disciplina', 'mindset', 'transformação pessoal', 'ebook']}
       />
       <Hero />
+      <ThreePillarsSection />
       <TransformationStory />
       <ObjectionsSection />
       <OfferCard />
+      <MethodApplicationSection />
       <TestimonialsSection />
       <TransformativeBenefitsSection />
       <DiagnosisSection />
       <GuaranteeSection />
       <FAQSection />
       <FinalCTASection />
-      <Features />
-      <WhyQuebrando />
       
     </PageLayout>
   );
