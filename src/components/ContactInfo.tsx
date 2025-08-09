@@ -34,7 +34,7 @@ const OfferCard = () => {
               {/* Golpe Duplo - Oferta + Preço com hierarquia */}
               <div className="text-center space-y-6 sm:space-y-8">
                 {/* Preço com hierarquia visual clara */}
-                <div className="bg-gradient-to-r from-dark-900/60 to-dark red-900/60 p-6 sm:p-8 rounded-lg border-2 border-dark red-500">
+                <div className="bg-gradient-to-r from-dark blue-900/60 to-dark blue-900/60 p-6 sm:p-8 rounded-lg border-2 border-dark blue-500">
                   <div className="flex flex-col items-center justify-center space-y-2">
                     <span className="text-4x1 sm:text-5x1 text-white-300 font-big">De</span>
                     <span className="text-2xl sm:text-3xl md:text-4xl text-gray-400 line-through font-bold">R$197,00</span>
