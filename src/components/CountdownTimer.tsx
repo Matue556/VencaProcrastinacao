@@ -84,7 +84,7 @@ const CountdownTimer = () => {
           <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-white bg-black/30 rounded-lg px-2 sm:px-4 py-1 sm:py-2">
             {String(timeLeft.hours).padStart(2, '0')}
           </div>
-          <div className="text-xs sm:text-sm text-orange-300 mt-1 font-medium">
+          <div className="text-xs sm:text-sm text-white-300 mt-1 font-medium">
             HORAS
           </div>
         </motion.div>
@@ -99,7 +99,7 @@ const CountdownTimer = () => {
           <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-white bg-black/30 rounded-lg px-2 sm:px-4 py-1 sm:py-2">
             {String(timeLeft.minutes).padStart(2, '0')}
           </div>
-          <div className="text-xs sm:text-sm text-orange-300 mt-1 font-medium">
+          <div className="text-xs sm:text-sm text-white-300 mt-1 font-medium">
             MINUTOS
           </div>
         </motion.div>
@@ -114,14 +114,14 @@ const CountdownTimer = () => {
           <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-white bg-black/30 rounded-lg px-2 sm:px-4 py-1 sm:py-2">
             {String(timeLeft.seconds).padStart(2, '0')}
           </div>
-          <div className="text-xs sm:text-sm text-orange-300 mt-1 font-medium">
+          <div className="text-xs sm:text-sm text-white-300 mt-1 font-medium">
             SEGUNDOS
           </div>
         </motion.div>
       </div>
       
       <motion.p 
-        className="text-xs sm:text-sm text-orange-200 mt-3 font-medium"
+        className="text-xs sm:text-sm text-orange-200 mt-7 font-medium"
         animate={{ opacity: [0.7, 1, 0.7] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
