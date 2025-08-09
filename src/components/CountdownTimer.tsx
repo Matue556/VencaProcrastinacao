@@ -70,7 +70,7 @@ const CountdownTimer = () => {
         >
           <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-orange-300" />
         </motion.div>
-        <h3 className="text-sm sm:text-lg font-bold text-orange-200">
+        <h3 className="text-sm sm:text-lg font-bold text-white-200">
           ⏰ Está oferta irá acabar em:
         </h3>
       </div>
