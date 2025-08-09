@@ -52,7 +52,6 @@ const OfferCard = () => {
                   
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-white text-sm sm:text-base">📘 Guia Completo Quebrando Correntes</h4>
                         <p className="text-gray-300 text-xs sm:text-sm">(baseado em neurociência e comportamento mental)</p>
