@@ -26,7 +26,7 @@ const OfferCard = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gray-800/80 backdrop-blur-sm border-2 border-dark blue-500 rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 md:p-10 relative overflow-hidden">
+          <div className="bg-blue-800/80 backdrop-blur-sm border-2 border-black-500 rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 md:p-10 relative overflow-hidden">
             {/* Gradiente sutil de fundo */}
             <div className="absolute inset-0 bg-gradient-to-br from-dark blue-900/20 to-gray-900/30 rounded-xl sm:rounded-2xl"></div>
             
