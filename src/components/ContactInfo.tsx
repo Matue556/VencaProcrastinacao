@@ -45,11 +45,12 @@ const OfferCard = () => {
                 </div>
 
                 {/* Benefícios e Bônus organizados */}
+                <div className="flex items-center justify-center min-h-screen">
                 <div className="space-y-4 sm:space-y-6">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center text-white">
                     ✅ O que você vai desbloquear por  <span className="text-green-400">R$17,99</span>
                   </h3>
-                  
+    
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-start space-x-3">
                       <div>
