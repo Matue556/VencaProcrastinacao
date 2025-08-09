@@ -51,7 +51,7 @@ const OfferCard = () => {
                   </h3>
     
                   <div className="space-y-3 sm:space-y-4">
-                   
+                   <div className="flex items-start space-x-3">
                       <div>
                         <h4 className="font-semibold text-white text-sm sm:text-base">📘 Guia Completo Quebrando Correntes</h4>
                         <p className="text-gray-300 text-xs sm:text-sm">(baseado em neurociência e comportamento mental)</p>
