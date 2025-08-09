@@ -104,19 +104,6 @@ const OfferCard = () => {
                   <span className="text-xs sm:text-sm font-medium">🛡️ Garantia de 7 dias sem risco</span>
                 </div>
               </div>
-
-              {/* Diferenciação */}
-              <div className="bg-gray-700/50 p-4 sm:p-6 rounded-lg border border-gray-600">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-center">
-                  <div>
-                    <p className="text-red-400 font-semibold text-xs sm:text-sm mb-1">❌ Não é motivacional vazio.</p>
-                    <p className="text-red-400 font-semibold text-xs sm:text-sm">❌ Não é mais uma promessa furada.</p>
-                  </div>
-                  <div>
-                    <p className="text-green-400 font-semibold text-xs sm:text-sm">✅ É um caminho prático que já mudou vidas, e pode mudar a sua.</p>
-                  </div>
-                </div>
-              </div>
               
               {/* Golpe Final - CTA Poderoso */}
               <Button
