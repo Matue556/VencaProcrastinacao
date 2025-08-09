@@ -76,7 +76,7 @@ const OfferCard = () => {
                   </div>
 
                   {/* Bônus */}
-                  <div className="bg-gradient-to-r from-yellow-900/30 to-orange-900/30 p-4 sm:p-6 rounded-lg border border-yellow-500/50">
+                  <div className="bg-gradient-to-r from-dark blue-900/30 to-orange-900/30 p-4 sm:p-6 rounded-lg border border-yellow-500/50">
                     <h4 className="font-bold text-yellow-300 text-base sm:text-lg mb-3 sm:mb-4 text-center">🎁 3 bônus práticos para ativar o foco no dia a dia:</h4>
                     <div className="space-y-2 sm:space-y-3">
                       <div className="flex items-start space-x-3">
