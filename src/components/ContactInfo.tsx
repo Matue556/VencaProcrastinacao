@@ -59,7 +59,6 @@ const OfferCard = () => {
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-white text-sm sm:text-base">🧠 Sistema simples, porém poderoso</h4>
                         <p className="text-gray-300 text-xs sm:text-sm">Para conseguir eliminar a procrastinação em poucos dias</p>
@@ -67,7 +66,6 @@ const OfferCard = () => {
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-400 mt-1 flex-shrink-0" />
                       <div>
                         <h4 className="font-semibold text-white text-sm sm:text-base">🎯 Técnicas e ferramentas de gestão de tempo que funcionam para todos</h4>
                       </div>
