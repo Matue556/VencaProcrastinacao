@@ -28,7 +28,7 @@ const OfferCard = () => {
         <div className="max-w-3xl mx-auto">
           <div className="bg-blue-800/80 backdrop-blur-sm border-2 border-dark blue-500 rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-8 md:p-10 relative overflow-hidden">
             {/* Gradiente sutil de fundo */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 to-gray-900/30 rounded-xl sm:rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-pink-900/20 to-gray-900/30 rounded-xl sm:rounded-2xl"></div>
             
             <div className="relative z-10 space-y-4 sm:space-y-6 md:space-y-8">
               {/* Golpe Duplo - Oferta + Preço com hierarquia */}
