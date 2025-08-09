@@ -21,7 +21,7 @@ const OfferCard = () => {
         <div className="text-center mb-4 sm:mb-8 md:mb-12">
           {/* Golpe Inicial - Impacto emocional */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white leading-tight max-w-4xl mx-auto">
-            🔥 Pare de adiar sua vida e transforme a procrastinação em ação imparável!
+             Pare de adiar sua vida     e transforme a procrastinação em ação imparável!
           </h2>
         </div>
 
