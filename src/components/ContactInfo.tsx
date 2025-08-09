@@ -108,7 +108,7 @@ const OfferCard = () => {
               {/* Golpe Final - CTA Poderoso */}
               <Button
                 onClick={handlePurchase}
-                className="w-full py-4 sm:py-6 md:py-8 lg:py-10 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-purple -500 to-blue-500 hover:from-red-600 hover:to-orange-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-black relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-3 border-red-400 transform hover:scale-105"
+                className="w-full py-4 sm:py-6 md:py-8 lg:py-10 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-purple -500 to-purple-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-black relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-3 border-red-400 transform hover:scale-105"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   🔥 Quero Começar Minha Transformação Agora
