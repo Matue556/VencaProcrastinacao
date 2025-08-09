@@ -80,15 +80,15 @@ const OfferCard = () => {
                     <h4 className="font-bold text-white-300 text-base sm:text-lg mb-3 sm:mb-4 text-center">🎁 3 bônus práticos para ativar o foco no dia a dia:</h4>
                     <div className="space-y-2 sm:space-y-3">
                       <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 sm:w-7 sm:h-7 text-green-400 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-200 text-sm sm:text-base">25 Frases de Gatilhos Mentais Para Usar No Dia a Dia</span>
                       </div>
                       <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 sm:w-7 sm:h-7 text-green-400 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-200 text-sm sm:text-base">Wallpapers Motivacionais Para Manter o Foco</span>
                       </div>
                       <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 sm:w-7 sm:h-7 text-green-400 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-200 text-sm sm:text-base">As Melhores Técnicas e Ferramentas de Gestão de Tempo</span>
                       </div>
                     </div>
