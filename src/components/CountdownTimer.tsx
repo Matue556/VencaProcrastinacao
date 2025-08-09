@@ -121,8 +121,8 @@ const CountdownTimer = () => {
       </div>
       
       <motion.p 
-        className="text-xs sm:text-sm text-orange-200 mt-7 font-medium"
-        animate={{ opacity: [0.7, 1, 0.7] }}
+        className="text-xs sm:text-sm text-orange-200 mt-7 font-big"
+        animate={{ opacity: [1.0, 1, 0.7] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
         🔥 Não perca essa oportunidade única!
