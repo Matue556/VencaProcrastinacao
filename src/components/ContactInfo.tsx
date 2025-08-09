@@ -39,7 +39,7 @@ const OfferCard = () => {
                     <span className="text-4x1 sm:text-5x1 text-white-300 font-big">De</span>
                     <span className="text-2xl sm:text-3xl md:text-4xl text-gray-400 line-through font-bold">R$197,00</span>
                     <span className="text-lg sm:text-xl text-gray-300 font-medium">Por apenas</span>
-                    <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-orange-400 drop-shadow-lg">R$17,99</span>
+                    <span className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-black text-green-400 drop-shadow-lg">R$17,99</span>
                   </div>
                   <p className="text-orange-300 font-semibold text-sm sm:text-base mt-4">⚡ Oportunidade única - Se você não sentir diferença nos primeiros 7 dias, devolvemos seu dinheiro ⚡</p>
                 </div>
