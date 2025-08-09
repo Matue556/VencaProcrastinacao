@@ -41,7 +41,7 @@ const CountdownTimer = () => {
   if (isExpired) {
     return (
       <motion.div 
-        className="text-center py-4 px-6 mx-4 sm:mx-6 mb-6 bg-gradient-to-r from-red-900/90 to-blue-800/90 backdrop-blur-sm border border-blue-500/30 rounded-xl shadow-2xl"
+        className="text-center py-4 px-6 mx-4 sm:mx-6 mb-6 bg-gradient-to-r from-red-900/90 to-red-800/90 backdrop-blur-sm border border-red-500/30 rounded-xl shadow-2xl"
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -58,7 +58,7 @@ const CountdownTimer = () => {
 
   return (
     <motion.div 
-      className="text-center py-4 px-6 mx-4 sm:mx-6 mb-6 bg-gradient-to-r from-orange-900/90 to-orange-800/90 backdrop-blur-sm border border-orange-500/30 rounded-xl shadow-2xl"
+      className="text-center py-4 px-6 mx-4 sm:mx-6 mb-6 bg-gradient-to-r from-orange-900/90 to-blue-800/90 backdrop-blur-sm border border-blue-500/30 rounded-xl shadow-2xl"
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
