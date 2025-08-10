@@ -15,6 +15,10 @@ const OfferCard = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/10 to-gray-900/20"></div>
       
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
+        {/* Contador regressivo no topo */}
+        <CountdownTimer />
+
+        <div className="text-center mb-4 sm:mb-8 md:mb-12">
           {/* Golpe Inicial - Impacto emocional */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white leading-tight max-w-4xl mx-auto">
              Pare de adiar sua vida     e transforme a procrastinação em ação imparável!
