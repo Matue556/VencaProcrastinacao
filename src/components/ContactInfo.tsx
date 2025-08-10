@@ -100,7 +100,7 @@ const OfferCard = () => {
               bg-gradient-to-r from-blue-500 to-black hover:from-black hover:to-blue-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-blue-400 transform hover:scale-105"
               >
                 <span className="relative z-10 flex items-center justify-center">
-                  🔥 Quero Começar Minha Transformação Agora
+                  🔥 Clique e comece hoje!
                   <Unlock className="ml-2 sm:ml-3 w-5 h-5 sm:w-7 sm:h-7 group-hover:scale-125 transition-transform" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-royal blue-400 to-black-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
