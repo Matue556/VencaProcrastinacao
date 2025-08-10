@@ -125,7 +125,7 @@ const OfferCard = () => {
                 </p>
                 <p className="font-bold text-white text-2x1 sm:text-2x1 md:text-lg">
                   Adquira seu acesso<br/>
-                  E quebre as correntes de uma vez por todas.
+                  E liberte-se da procrastinação
                 </p>
               </div>
             </div>
