@@ -78,15 +78,15 @@ const Hero = () => {
                 variants={itemVariants}
               >
                 <Button
-                  onClick={scrollToOffer}
-                 className="w-full py-4 sm:py-6 md:py-8 text-base sm:text-lg md:text-xl bg-gradient-to-r from-blue-900 to-black hover:from-blue-800 hover:to-gray-900 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-blue-700 transform hover:scale-105"
+  onClick={scrollToOffer}
+  className="w-full py-4 sm:py-6 md:py-8 text-base sm:text-lg md:text-xl bg-gradient-to-r from-blue-900 to-black hover:from-blue-700 hover:to-blue-900  text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-blue-700  transform hover:scale-105 active:scale-95"
+>
+  <span className="relative z-10 flex items-center justify-center">
+    🚀 Começar agora
+  </span>
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</Button>
 
-                >
-                  <span className="relative z-10 flex items-center justify-center">
-                    🚀 Começar agora
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </Button>
               <p className="text-lg sm:text-2xl text-white mt-15 font-medium">
                   Clique e comece sua transformação ainda hoje.
                 </p>
