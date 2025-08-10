@@ -109,8 +109,7 @@ const OfferCard = () => {
               <Button
                 onClick={handlePurchase}
                className="w-full py-4 sm:py-6 md:py-8 lg:py-10 text-lg sm:text-xl md:text-2xl 
-bg-gradient-to-r from-blue-500 to-black hover:from-black hover:to-blue-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-white-400 transform hover:scale-105"
-
+              bg-gradient-to-r from-blue-500 to-black hover:from-black hover:to-blue-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-bold relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-2 border-blue-400 transform hover:scale-105"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   🔥 Quero Começar Minha Transformação Agora
