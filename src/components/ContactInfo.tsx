@@ -114,7 +114,7 @@ const OfferCard = () => {
                   🔥 Quero Começar Minha Transformação Agora
                   <Unlock className="ml-2 sm:ml-3 w-5 h-5 sm:w-7 sm:h-7 group-hover:scale-125 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-royal blue-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
 
               {/* Bloco final de persuasão emocional */}
