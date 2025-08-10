@@ -123,7 +123,7 @@ const OfferCard = () => {
                 <p className="text-xl sm:text-xl md:text-lg text-gray-200 leading-relaxed">
                   <strong>Você só precisa dar<br />o primeiro passo.</strong>
                 </p>
-                <p className="font-bold text-white text-sm sm:text-x1 md:text-lg">
+                <p className="font-bold text-white text-2x1 sm:text-x1 md:text-lg">
                   Adquira seu acesso<br/>
                   E quebre as correntes de uma vez por todas.
                 </p>
