@@ -2,7 +2,6 @@
 import React from 'react';
 import { Zap, CheckCircle, Star, Users, TrendingUp, Unlock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import CountdownTimer from './CountdownTimer';
 
 const OfferCard = () => {
   const handlePurchase = () => {
@@ -15,8 +14,6 @@ const OfferCard = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/10 to-gray-900/20"></div>
       
       <div className="max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
-        {/* Contador regressivo no topo */}
-        <CountdownTimer />
 
         <div className="text-center mb-4 sm:mb-8 md:mb-12">
           {/* Golpe Inicial - Impacto emocional */}
