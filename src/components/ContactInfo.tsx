@@ -108,13 +108,13 @@ const OfferCard = () => {
               {/* Golpe Final - CTA Poderoso */}
               <Button
                 onClick={handlePurchase}
-                className="w-full py-4 sm:py-6 md:py-8 lg:py-10 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-pink -500 to-purple-500 hover:from-purple-600 hover:to-purple-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-black relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-3 border-yellow-400 transform hover:scale-105"
+                className="w-full py-4 sm:py-6 md:py-8 lg:py-10 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-blue -500 to-purple-500 hover:from-purple-600 hover:to-purple-600 text-white rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 font-black relative overflow-hidden group min-h-[60px] sm:min-h-[80px] border-3 border-yellow-400 transform hover:scale-105"
               >
                 <span className="relative z-10 flex items-center justify-center">
                   🔥 Quero Começar Minha Transformação Agora
                   <Unlock className="ml-2 sm:ml-3 w-5 h-5 sm:w-7 sm:h-7 group-hover:scale-125 transition-transform" />
                 </span>
-                <div className="absolute inset-3 bg-gradient-to-r from-blue-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
 
               {/* Bloco final de persuasão emocional */}
