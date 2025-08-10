@@ -18,7 +18,7 @@ const OfferCard = () => {
         <div className="text-center mb-4 sm:mb-8 md:mb-12">
           {/* Golpe Inicial - Impacto emocional */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 sm:mb-8 text-white leading-tight max-w-4xl mx-auto">
-            Comece hoje e faça a sua vida andar no ritmo que você almeja! Dê o primeiro passo agora e não olhe pra trás!
+            Comece hoje e faça a sua vida andar no ritmo que você almeja! Dê o primeiro passo agora sem olhar para trás!
           </h2>
         </div>
 
