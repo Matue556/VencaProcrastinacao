@@ -92,18 +92,6 @@ const OfferCard = () => {
                   </div>
                 </div>
                </div>
-
-              {/* Garantias */}
-              <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 bg-green-900/30 p-3 sm:p-4 rounded-lg">
-                <div className="flex items-center">
-                  <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-green-400 mr-1 sm:mr-2" />
-                  <span className="text-xs sm:text-sm font-medium">🔐 Acesso imediato e vitalício</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-400 mr-1 sm:mr-2" />
-                  <span className="text-xs sm:text-sm font-medium">🛡️ Garantia de 7 dias sem risco</span>
-                </div>
-              </div>
               
               {/* Golpe Final - CTA Poderoso */}
               <Button
