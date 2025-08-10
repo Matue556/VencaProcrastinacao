@@ -22,10 +22,6 @@ const MobileFixedCTA = () => {
 
   return (
     <div className="fixed bottom-3 left-[5%] w-[90%] z-50">
-      {/* Texto de urgência social */}
-      <div className="bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold text-xs px-3 py-2 rounded-t-lg text-center shadow-lg animate-pulse-slow">
-        🟡 Hoje 500 pessoas já decidiram mudar de vida. Comece agora
-      </div>
       
       {/* Botão principal */}
       <button
