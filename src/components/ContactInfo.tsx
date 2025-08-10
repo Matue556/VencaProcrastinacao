@@ -121,7 +121,7 @@ const OfferCard = () => {
               {/* Bloco final de persuasão emocional */}
               <div className="bg-gradient-to-r from-dark blue-900 via-blue-700 to-dark blue p-4 sm:p-6 md:p-8 rounded-lg border-l-4 border-orange-500 text-center space-y-3 sm:space-y-4">
                 <p className="text-xl sm:text-xl md:text-lg text-gray-200 leading-relaxed">
-                  <strong>Você só precisa dar o primeiro passo.</strong>
+                  <strong>Você só precisa dar<br />o primeiro passo.</strong>
                 </p>
                 <p className="font-bold text-white text-lg sm:text-xl md:text-lg">
                   Adquira seu acesso<br/>
