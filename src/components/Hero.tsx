@@ -87,8 +87,8 @@ const Hero = () => {
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Button>
-                <p className="text-sm sm:text-base text-white/90 mt-4 font-medium">
-                  Sua transformação começa hoje
+                <p className="text-sm sm:text-2x1 text-white/90 mt-4 font-medium">
+                  Clique e começe sua transformação ainda hoje.
                 </p>
               </motion.div>
             </motion.div>
