@@ -8,7 +8,7 @@ const OfferCard = () => {
   const handlePurchase = () => {
     // Redirecionamento para o novo link de checkout
     window.open('https://go.disruptybr.com.br/xleccchllq', '_blank');
-
+return (
     <section id="offer" className="bg-gradient-to-br from-gray-900 to-black text-white py-6 sm:py-16 md:py-20 relative overflow-hidden border-t-4 border-orange-500">
       <div className="absolute inset-0 bg-gradient-to-br from-orange-900/10 to-gray-900/20"></div>
       
