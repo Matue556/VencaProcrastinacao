@@ -26,7 +26,7 @@ const MobileFixedCTA = () => {
       {/* Botão principal */}
       <button
         onClick={scrollToOffer}
-       className="w-full bg-blue-800 hover:bg-blue-700 text-white font-bold text-sm px-3 py-3 rounded-b-lg text-center shadow-lg transition-all duration-300 flex items-center justify-center gap-2 max-h-[48px]"
+       className="w-full bg-blue-800 hover:bg-blue-700 text-white font-bold text-sm px-2 py-1.5 rounded-b-lg text-center shadow-lg transition-all duration-300 flex items-center justify-center gap-2 max-h-[48px]"
 
         style={{
           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
