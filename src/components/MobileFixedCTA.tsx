@@ -32,7 +32,7 @@ const MobileFixedCTA = () => {
           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
         }}
       >
-        <span className="truncate">Quero Iniciar Minha Transformação - 81% OFF</span>
+        <span className="truncate">Garantir Acesso.</span>
         <Zap className="w-4 h-4 flex-shrink-0" />
       </button>
     </div>
