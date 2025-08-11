@@ -59,7 +59,7 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               {/* Título principal - novo título */}
               <motion.h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-black text-center mb-3 sm:mb-6 px-4" variants={itemVariants} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
-                🧠Acabe com a frustração de terminar o dia se sentindo um inútil.
+                Pare agora de perder anos da sua vida para a procrastinação.
               </motion.h1>
               
               {/* Segunda frase - mantida igual */}
@@ -69,7 +69,7 @@ const Hero = () => {
               
               {/* Terceira frase (subtítulo) - mantida igual */}
               <motion.p className="text-white text-base sm:text-xl md:text-2xl font-medium px-2 sm:px-4 leading-relaxed mb-8 sm:mb-12" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.9)' }}>
-                E se você pudesse ter foco mesmo nos dias ruins começando hoje?
+                Mas e se você pudesse ter foco mesmo nos dias ruins começando hoje?
               </motion.p>
               
               {/* Botão CTA */}
