@@ -14,37 +14,37 @@ const Testimonials = () => {
       quote: "Esse eBook foi como um tapa na cara que eu precisava. Parei de adiar tudo e hoje tenho rotina, foco e resultados.",
       author: "Lucas M.",
       role: "Estudante de Engenharia",
-      avatar: "/lovable-uploads/bb6e9a17-8122-498b-810e-c94ef2a23410.png"
+      avatar: "https://i.imgur.com/3Vd0e8S.jpeg"
     },
     {
       quote: "Achei que seria mais um conteúdo motivacional... Mas me surpreendi. É técnico, prático e direto.",
       author: "Jéssica A.",
       role: "Empreendedora",
-      avatar: "/lovable-uploads/a5e5e703-0b43-447b-b83f-79bad001a7a6.png"
+      avatar: "https://i.imgur.com/Yh6Qfut.jpeg"
     },
     {
       quote: "Finalmente consegui terminar projetos que estavam parados há meses. O método realmente funciona!",
       author: "Carlos R.",
       role: "Desenvolvedor",
-      avatar: "https://imgur.com/a/qjCSrYo"
+      avatar: "https://i.imgur.com/sQ1i0LZ.jpeg"
     },
     {
       quote: "Sofri por anos com a procrastinação... Esse método me fez levantar da cadeira e agir. Hoje sou mais produtiva do que nunca!",
       author: "Marina C.",
       role: "Designer Gráfica",
-      avatar: "https://imgur.com/uzASPgc.png"
+      avatar: "https://i.imgur.com/r8OPw3j.jpegg"
     },
     {
       quote: "Nunca pensei que um simples guia pudesse causar tanto impacto. Meu desempenho na faculdade dobrou. É direto, prático e poderoso.",
       author: "Eduardo F.",
       role: "Estudante de Direito",
-      avatar: "https://imgur.com/r8OPw3j.png"
+      avatar: "https://i.imgur.com/r8OPw3j.jpeg"
     },
     {
       quote: "Passei a vida adiando meus objetivos. Agora, acordo com foco e clareza. Foi um divisor de águas pra mim.",
       author: "Renata V.",
       role: "Psicóloga",
-      avatar: "https://imgur.com/XzO4GkO.png"
+      avatar: "https://i.imgur.com/XzO4GkO.jpeg"
     }
   ];
 
