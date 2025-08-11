@@ -51,7 +51,7 @@ const GuaranteeSection = () => {
             <div className="flex items-center justify-center gap-4 mb-6">
               <Shield className="w-12 h-12 md:w-16 md:h-16 text-orange-500" />
               <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-black">
-                🛡️ Garantia Incondicional de 7 Dias
+                🛡️ Garantia Obrigatória de 7 Dias
               </h2>
               <Shield className="w-12 h-12 md:w-16 md:h-16 text-orange-500" />
             </div>
@@ -70,12 +70,6 @@ const GuaranteeSection = () => {
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
                 Se por qualquer motivo você achar que não valeu a pena, é só enviar um e-mail e devolvemos <strong className="text-white">100% do seu dinheiro</strong>.
               </p>
-              
-              <div className="border-t border-orange-500/20 pt-6">
-                <p className="text-white text-lg md:text-xl font-semibold">
-                  Sem letras miúdas. Sem pegadinhas. Simples assim.
-                </p>
-              </div>
             </div>
           </motion.div>
 
