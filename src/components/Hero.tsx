@@ -69,7 +69,7 @@ const Hero = () => {
               
               {/* Terceira frase (subtítulo) - mantida igual */}
               <motion.p className="text-white text-base sm:text-xl md:text-2xl font-medium px-2 sm:px-4 leading-relaxed mb-8 sm:mb-12" variants={itemVariants} style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.9)' }}>
-                Imagina poder ter foco mesmo nos dias ruins, sem tempo e sem motivação e começando ainda hoje?
+                Imagina poder ter foco mesmo nos dias ruins, sem tempo, sem motivação e começando ainda hoje?
               </motion.p>
               
               {/* Botão CTA */}
