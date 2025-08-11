@@ -26,7 +26,7 @@ const Testimonials = () => {
       quote: "Finalmente consegui terminar projetos que estavam parados há meses. O método realmente funciona!",
       author: "Carlos R.",
       role: "Desenvolvedor",
-      avatar: "/lovable-uploads/ef553f47-3fcd-4071-9cd2-600bc1aef963.png"
+      avatar: "https://imgur.com/sQ1i0LZ"
     },
     {
       quote: "Sofri por anos com a procrastinação... Esse método me fez levantar da cadeira e agir. Hoje sou mais produtiva do que nunca!",
