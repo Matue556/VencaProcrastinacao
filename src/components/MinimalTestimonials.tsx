@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button';
 const MinimalTestimonials = () => {
   const testimonials = [
     {
-      name: "Mariana Lopes",
-      image: "/lovable-uploads/4187f423-ba69-4043-be76-c43098488348.png" // Placeholder - substitua pela imagem correta
+      name: "Roberto carlos",
+      image: "https://i.imgur.com/pApvouN.jpg" // Placeholder - substitua pela imagem correta
     },
     {
       name: "João Ferreira", 
