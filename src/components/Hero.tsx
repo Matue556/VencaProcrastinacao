@@ -72,6 +72,22 @@ const Hero = () => {
                 Imagina poder ter foco mesmo nos dias ruins, sem tempo, sem motivação e começando ainda hoje?
               </motion.p>
               
+              {/* Vídeo Vimeo */}
+              <motion.div 
+                className="w-full max-w-4xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4" 
+                variants={itemVariants}
+              >
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
+                  <iframe
+                    src="https://player.vimeo.com/video/1109248003?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0&controls=0"
+                    className="absolute inset-0 w-full h-full"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="Vídeo demonstrativo"
+                  />
+                </div>
+              </motion.div>
+              
               {/* Botão CTA */}
               <motion.div 
                 className="w-full max-w-4xl mx-auto mb-8 sm:mb-12 px-2 sm:px-4" 

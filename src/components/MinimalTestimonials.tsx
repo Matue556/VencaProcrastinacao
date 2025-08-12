@@ -87,7 +87,7 @@ const MinimalTestimonials = () => {
         >
           <Button
   onClick={() => {
-    const section = document.getElementById("oferta");
+    const section = document.getElementById("offer");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
