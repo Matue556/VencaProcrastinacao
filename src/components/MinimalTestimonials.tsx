@@ -85,19 +85,18 @@ const MinimalTestimonials = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Button 
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
-          >
-            Quero começar hoje mesmo
-          </Button>
-        </motion.div>
-      </div>
-    </section>
-  );
-};
-
-export default MinimalTestimonials;
+          <Button
+  onClick={() => {
+    const section = document.getElementById("oferta");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  size="lg"
+  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+>
+  Quero começar hoje mesmo
+</Button>
         </motion.div>
       </div>
     </section>
