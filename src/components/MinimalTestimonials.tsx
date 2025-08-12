@@ -12,11 +12,11 @@ const MinimalTestimonials = () => {
     },
     {
       name: "João Ferreira", 
-      image: "/lovable-uploads/48ecf6e2-5a98-4a9d-af6f-ae2265cd4098.png" // Placeholder - substitua pela imagem correta
+      image: "https://i.imgur.com/2eTWePu.jpg" // Placeholder - substitua pela imagem correta
     },
     {
-      name: "Camila Santos",
-      image: "/lovable-uploads/5262afdb-dd24-4d5e-be66-7c6717adbca9.png" // Placeholder - substitua pela imagem correta
+      name: "pintonaldo santos",
+      image: "https://i.imgur.com/YTtKDIp.jpg" // Placeholder - substitua pela imagem correta
     }
   ];
 
