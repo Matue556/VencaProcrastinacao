@@ -2,6 +2,7 @@
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
 import ThreePillarsSection from '@/components/ThreePillarsSection';
+import MinimalTestimonials from '@/components/MinimalTestimonials';
 import TransformationStory from '@/components/TransformationStory';
 import ObjectionsSection from '@/components/ObjectionsSection';
 import OfferCard from '@/components/ContactInfo';
@@ -26,6 +27,7 @@ const Index = () => {
       />
       <Hero />
       <ThreePillarsSection />
+      <MinimalTestimonials />
       <TransformationStory />
       <ObjectionsSection />
       <OfferCard />
