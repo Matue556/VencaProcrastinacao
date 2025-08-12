@@ -79,7 +79,7 @@ const Hero = () => {
               >
                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
                   <iframe
-                    src="https://player.vimeo.com/video/1109248003?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0&controls=0"
+                    src="https://player.vimeo.com/video/1109249460?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0"
                     className="absolute inset-0 w-full h-full"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
