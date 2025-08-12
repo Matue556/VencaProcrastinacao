@@ -7,15 +7,15 @@ import { Button } from '@/components/ui/button';
 const MinimalTestimonials = () => {
   const testimonials = [
     {
-      name: "Roberto carlos",
+      name: "Lucas Ferreira",
       image: "https://i.imgur.com/pApvouN.jpg" // Placeholder - substitua pela imagem correta
     },
     {
-      name: "João Ferreira", 
+      name: "Pedro Guerra", 
       image: "https://i.imgur.com/2eTWePu.jpg" // Placeholder - substitua pela imagem correta
     },
     {
-      name: "pintonaldo santos",
+      name: "Guilherme",
       image: "https://i.imgur.com/YTtKDIp.jpg" // Placeholder - substitua pela imagem correta
     }
   ];
